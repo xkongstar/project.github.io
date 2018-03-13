@@ -5,15 +5,14 @@ Page({
     canvasHidden:false,
     maskHidden:true,
     imagePath:'',
-    placeholder:'http://wxapp-union.com'//默认二维码生成文本
+    placeholder:'请输入网址或文字，然后点击下面按钮生成对应二维码'//默认二维码生成文本
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
     var size = this.setCanvasSize();//动态设置画布大小
     var initUrl = this.data.placeholder;
     this.createQrCode(initUrl, "mycanvas", size.w, size.h);
-    
-
+    console.log(this);
   },
   onReady:function(){
   
