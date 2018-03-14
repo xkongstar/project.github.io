@@ -2,11 +2,9 @@
 
 <view class="post-userList">
   <block wx:for="{{userList}}" wx:key="userList">
-
-
     <view class="userlogo">
       <image class="userlogo-img" src="{{item.url}}" />
-      <text class="userlogo-phone">15279106115</text>
+      <text class="userlogo-phone">18681597074</text>
     </view>
 
     <view class="userdata">

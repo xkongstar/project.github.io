@@ -14,7 +14,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "i麦当劳",
+    "navigationBarTitleText": "仿麦当劳",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
