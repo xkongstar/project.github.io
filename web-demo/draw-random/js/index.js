@@ -2,14 +2,16 @@
     'use strict';
 
     var file_num = 43;
-    var photo_row = 6;
+    var photo_row = 4;
     var photo_col = 10;
     var photo_num = photo_row * photo_col;
     var gallery = $('#gallery');
     var photos = [];
 
     for (var i=1; i<=photo_num; i++){
-        photos.push('photo/'+Math.ceil(Math.random()*file_num)+'.jpg');
+        //Math.ceil() 函数返回大于或等于一个给定数字的最小整数
+        //Math.random() 函数返回一个浮点,  伪随机数在范围[0，1)
+        photos.push('photo/' + Math.ceil(Math.random()*file_num)+'.jpg');
     }
 
     var loadedIndex = 1;
@@ -33,27 +35,6 @@
         };
 
         img.src = photo;
-
-        /* 此方式会将重复图片连在一起输出
-        var img = document.createElement('img');
-
-        img.onload = function(e){
-            img.onload = null;
-            var link = document.createElement('a');
-            var li = document.createElement('li');
-
-            link.href = '#';
-            link.appendChild(this);
-            li.appendChild(link);
-
-            gallery[0].appendChild(li);
-
-            setTimeout(function(){
-                $(li).addClass('loaded');
-            }, 25*loadedIndex++);
-        };
-        img.src = photo;
-        */
     });
 
     var timer_big, timer_small;
