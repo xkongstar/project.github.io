@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 登录获取用户信息 -->
+  <view class="userinfo">
+    <view class="des">
+      wx.getStorageSync(); wx.setStorageSync wx.login(); wx.getSetting(); wx.getUserInfo
+    </view>
+    <!--
+      open-type="getUserInfo" 生效时，
+      bindgetuserinfo="Handler"
+      用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同wx.getUserInfo
+     -->
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="btn">
+      登录获取头像昵称
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </block>
+  </view>
+
+  <view>
+    <view class="des">
+      getPhoneNumber(OBJECT)
+    </view>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取微信用户绑定的手机号</button>
+  </view>
+
+  <view>
+    <button bindtap="toTemplateMessage">模板消息</button>
+  </view>
+
+</view>
