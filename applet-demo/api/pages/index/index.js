@@ -67,12 +67,12 @@ Page({
       })
     },
 
-    //点击头像跳转到日志
-    bindViewTap: function() {
-        wx.navigateTo({
-            url: '../logs/logs'
-        })
-    },
+    // //点击头像跳转到日志
+    // bindViewTap: function() {
+    //     wx.navigateTo({
+    //         url: '../logs/logs'
+    //     })
+    // },
 
     //获取微信用户的手机号码
     getPhoneNumber: function(e){
@@ -82,11 +82,25 @@ Page({
       console.log(e.detail.encryptedData)
     },
 
+    //跳转到canvas
+    tocanvas: function(){
+        wx.navigateTo({
+            url: '../canvas/canvas'
+        })
+    },
+
     //跳转到模板消息
     toTemplateMessage: function(){
         wx.navigateTo({
             url: '../templateMessage/templateMessage'
         })
-    }
+    },
+
+    //跳转到侧滑菜单
+    toSlideMenu: function(){
+        wx.navigateTo({
+            url: '../slideMenu/slideMenu'
+        })
+    },
 
 })

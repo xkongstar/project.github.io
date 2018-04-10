@@ -1,17 +1,10 @@
 /**index.wxss**/
 .container > view{
   margin: 0;
-  padding: 40rpx 0;
-  border-bottom: 2rpx solid #999;
+  padding: 10rpx 0;
 }
 .btn{
   width: 100%;
-}
-.des{
-  text-align: center;
-  font-size: 24rpx;
-  color: #999;
-  margin-bottom: 10rpx;
 }
 .userinfo {
   display: flex;
