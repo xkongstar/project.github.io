@@ -1,12 +1,13 @@
 //app.js
 //App() 函数用来注册一个小程序。接受一个 object 参数，其指定小程序的生命周期函数等。
+var config = require("utils/config.js");
 App({
     /**
      * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
      */
     onLaunch: function () {
         // 展示本地存储能力
-        var logs = wx.getStorageSync('logs') || []
+        var logs = wx.getStorageSync('logs') || [],that = this;
         // arr.unshift(element1, ..., elementN)
         // unshift() 方法将一个或多个元素添加到数组的开头，并返回新数组的长度。
         logs.unshift(Date.now())
@@ -19,6 +20,14 @@ App({
           success: res => {
             console.log(res);
             // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.request({
+            url:`https://api.weixin.qq.com/sns/jscode2session?appid=${config.appid}&secret=${config.secret}&js_code=${res.code}&grant_type=authorization_code`,
+            success:function (res) {
+                console.log(res.data.openid);
+                var openid = res.data.openid;
+                that.globalData.openid = openid;
+            }
+        });
           }
         })
 

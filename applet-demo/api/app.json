@@ -1,8 +1,9 @@
 {
-  "pages":[    
+  "pages":[
+    "pages/templateMessage/templateMessage",
     "pages/index/index",
     "pages/canvas/canvas",
-    "pages/templateMessage/templateMessage",  
+
     "pages/slideMenu/slideMenu",  
     "pages/logs/logs"
   ],
