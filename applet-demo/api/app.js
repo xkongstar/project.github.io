@@ -5,7 +5,9 @@ App({
     /**
      * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
      */
-    onLaunch: function () {
+    onLaunch: function (opt) {
+        //小程序场景值
+        console.log('小程序场景值:'+opt.scene);
         // 展示本地存储能力
         var logs = wx.getStorageSync('logs') || [],that = this;
         // arr.unshift(element1, ..., elementN)
@@ -23,9 +25,12 @@ App({
         wx.request({
             url:`https://api.weixin.qq.com/sns/jscode2session?appid=${config.appid}&secret=${config.secret}&js_code=${res.code}&grant_type=authorization_code`,
             success:function (res) {
+                console.log(res);
                 console.log(res.data.openid);
                 var openid = res.data.openid;
+                var session_key = res.data.session_key;
                 that.globalData.openid = openid;
+                that.globalData.session_key = session_key;
             }
         });
           }
@@ -60,8 +65,9 @@ App({
     /**
      * 当小程序启动，或从后台进入前台显示，会触发 onShow
      */
-    onShow:function () {
-
+    onShow:function (opt) {
+        //小程序场景值
+        console.log('小程序场景值:'+opt.scene);
     },
 
     /**

@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <view style="text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;"> API </view>
   <!-- 登录获取用户信息 -->
   <view class="userinfo">
     <!--wx.getStorageSync(); wx.setStorageSync wx.login(); wx.getSetting(); wx.getUserInfo-->
@@ -32,7 +33,56 @@
   </view>
 
   <view>
-    <button bindtap="toSlideMenu">侧滑菜单</button>
+    <button bindtap="toGetLocation">获取位置</button>
   </view>
 
+  <view>
+    <button bindtap="openLocation">使用微信内置地图查看位置</button>
+  </view>
+
+  <view>
+    <button bindtap="chooseAddress">选择地址</button>
+  </view>
+
+  <view>
+    <button bindtap="setting">设置</button>
+  </view>
+
+  <view>
+    <button bindtap="openOther">打开小程序和APP说明</button>
+  </view>
+
+  <view>
+    <button bindtap="chooseInvoiceTitle">选择用户的发票抬头</button>
+  </view>
+
+    <view>
+        <button bindtap="biometrics">生物认证</button>
+    </view>
+
+  
+
+
+  <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">下面的需要后台配合</view>
+
+  <view>
+    <button bindtap="card">卡券</button>
+  </view>
+
+  <view>
+    <button bindtap="getWeRunData">微信运动</button>
+  </view>
+
+  <view>
+    <button bindtap="QRCode">获取二维码</button>
+  </view>
+
+  <view>
+    <button bindtap="share">转发</button>
+  </view>
+
+    <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">功能块</view>
+    <view>
+        <button bindtap="toSlideMenu">侧滑菜单</button>
+    </view>
 </view>

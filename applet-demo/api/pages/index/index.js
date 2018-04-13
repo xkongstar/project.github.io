@@ -103,4 +103,82 @@ Page({
         })
     },
 
+    //获取位置
+    toGetLocation: function(){
+        wx.navigateTo({
+            url: '../getLocation/getLocation'
+        })
+    },
+
+    //转发
+    share: function(){
+        wx.navigateTo({
+            url: '../share/share'
+        })
+    },
+
+    //使用微信内置地图查看位置
+    openLocation: function(){
+        wx.navigateTo({
+            url: '../openLocation/openLocation'
+        })
+    },
+
+    //获取二维码
+    QRCode: function(){
+        wx.navigateTo({
+            url: '../QRCode/QRCode'
+        })
+    },
+
+    //选择地址
+    chooseAddress: function(){
+        wx.navigateTo({
+            url: '../chooseAddress/chooseAddress'
+        })
+    },
+
+    //卡券
+    card: function(){
+        wx.navigateTo({
+            url: '../card/card'
+        })
+    },
+
+    //设置
+    setting: function(){
+        wx.navigateTo({
+            url: '../setting/setting'
+        })
+    },
+
+    //微信运动
+    getWeRunData: function(){
+        wx.navigateTo({
+            url: '../getWeRunData/getWeRunData'
+        })
+    },
+
+    //打开小程序和APP说明
+    openOther: function(){
+        wx.navigateTo({
+            url: '../openOther/openOther'
+        })
+    },
+
+    //选择用户的发票抬头
+    chooseInvoiceTitle: function(){
+        wx.navigateTo({
+            url: '../chooseInvoiceTitle/chooseInvoiceTitle'
+        })
+    },
+
+    //生物认证
+    biometrics: function(){
+        wx.navigateTo({
+            url: '../biometrics/biometrics'
+        })
+    },
+
+
 })

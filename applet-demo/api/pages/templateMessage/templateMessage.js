@@ -75,7 +75,7 @@ Page({
         //获取access_token
         let promise1 = new Promise(function(resolve, reject){
             wx.request({
-                url: `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${config.appid}&secret=${config.secret}`, //仅为示例，并非真实的接口地址
+                url: `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${config.appid}&secret=${config.secret}`,
                 header: {
                     'content-type': 'application/json' // 默认值
                 },

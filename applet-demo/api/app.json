@@ -1,6 +1,18 @@
 {
   "pages":[    
+    
     "pages/index/index",
+    "pages/biometrics/biometrics",
+    "pages/chooseInvoiceTitle/chooseInvoiceTitle",
+    "pages/openOther/openOther",
+    "pages/getWeRunData/getWeRunData",
+    "pages/setting/setting",
+    "pages/card/card",
+    "pages/chooseAddress/chooseAddress",
+    "pages/QRCode/QRCode",
+    "pages/share/share",
+    "pages/getLocation/getLocation",
+    "pages/openLocation/openLocation",
     "pages/canvas/canvas",
     "pages/templateMessage/templateMessage",
     "pages/slideMenu/slideMenu",  
