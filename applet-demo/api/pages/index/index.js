@@ -180,5 +180,19 @@ Page({
         })
     },
 
+    //找厕所
+    toilet: function(){
+        wx.navigateTo({
+            url: '../toilet/index/index'
+        })
+    },
 
+    //再次获取权限
+    authority: function () {
+        wx.openSetting({
+            success: (res) => {
+                console.log(res);
+            }
+        })
+    }
 })

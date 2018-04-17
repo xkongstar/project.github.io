@@ -1,7 +1,9 @@
 {
   "pages":[    
-    
-    "pages/index/index",
+    "pages/index/index",    
+    "pages/toilet/index/index",    
+    "pages/toilet/location/location",  
+    "pages/toilet/location-detail/location",              
     "pages/biometrics/biometrics",
     "pages/chooseInvoiceTitle/chooseInvoiceTitle",
     "pages/openOther/openOther",

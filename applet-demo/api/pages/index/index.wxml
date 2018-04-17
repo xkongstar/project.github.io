@@ -60,6 +60,10 @@
         <button bindtap="biometrics">生物认证</button>
     </view>
 
+    <view>
+      <button bindtap="authority">再次获取权限</button>
+    </view>
+
   
 
 
@@ -84,5 +88,8 @@
     <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">功能块</view>
     <view>
         <button bindtap="toSlideMenu">侧滑菜单</button>
+    </view>
+    <view>
+      <button bindtap="toilet">找厕所</button>
     </view>
 </view>
