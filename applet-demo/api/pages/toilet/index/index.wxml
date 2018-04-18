@@ -60,5 +60,5 @@
 <view class="handle" wx:if="{{onLine && yesAuth}}">
 
     <image class="refresh" src="../../../images/refresh.png" mode="aspectFit" bindtap="doRefresh"></image>
-   
+
 </view>
