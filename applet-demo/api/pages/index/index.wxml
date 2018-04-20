@@ -41,6 +41,10 @@
   </view>
 
   <view>
+    <button bindtap="createMapContext">地图组件控制</button>
+  </view>
+
+  <view>
     <button bindtap="chooseAddress">选择地址</button>
   </view>
 
@@ -92,4 +96,11 @@
     <view>
       <button bindtap="toilet">找厕所</button>
     </view>
+
+
+
+  <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">SDK</view>
+  <view>
+    <button bindtap="locationServices">位置服务</button>
+  </view>
 </view>

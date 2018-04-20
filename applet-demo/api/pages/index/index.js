@@ -194,5 +194,19 @@ Page({
                 console.log(res);
             }
         })
+    },
+
+    //地图组件控制
+    createMapContext: function(){
+        wx.navigateTo({
+            url: '../createMapContext/createMapContext'
+        })
+    },
+
+    //高德开发平台
+    locationServices: function (){
+        wx.navigateTo({
+            url: '../locationServices/index/index'
+        })
     }
 })

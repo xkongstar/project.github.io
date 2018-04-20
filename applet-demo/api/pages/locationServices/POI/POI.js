@@ -1,4 +1,5 @@
-// pages/getLocation/getLocation.js
+// pages/gordes/POI/POI.js
+var amapFile = require('../../../libs/amap-wx.js')
 Page({
 
   /**
@@ -12,14 +13,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      wx.getLocation({
-          type: 'wgs84',
-          success: function(res) {
-              console.log(res);
-              var latitude = res.latitude
-              var longitude = res.longitude
-              var speed = res.speed
-              var accuracy = res.accuracy
+      var that = this;
+      var myAmapFun = new amapFile.AMapWX({key:'f9e6b710324fc54b2c53e10a05b65ea9'});
+      myAmapFun.getPoiAround({
+          success: function(data){
+              console.log(data);
+          },
+          fail: function(info){
+              //失败回调
+              console.log(info)
           }
       })
   },

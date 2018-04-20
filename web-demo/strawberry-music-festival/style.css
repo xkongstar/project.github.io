@@ -1,0 +1,196 @@
+
+@keyframes centerCircle{
+    0%{transform:rotate(0deg); transform-origin:420.6px 289px}
+    100%{transform:rotate(-360deg); transform-origin:420.6px 289px}
+}
+#centerCircle{animation:centerCircle linear 4s infinite; }   /*中心旋转圆设置*/
+
+@keyframes moveUp{
+    0% {transform: translateY(40px)}
+    100% {transform: translateY(-30px)}
+}
+#moveUp {animation:moveUp linear 4s infinite alternate; }   /*向上移动*/
+
+
+@keyframes moveDown{
+    0% {transform: translateY(-50px)}
+    100% {transform: translateY(20px)}
+}
+#moveDown {animation:moveDown linear 4s infinite alternate ; }   /*向下移动*/
+
+
+@keyframes dot1{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#dot1{animation:dot1 ease 2s infinite alternate}
+
+@keyframes dot2{
+    0%{opacity:0.7}
+    70%{opacity:0}
+    100%{opacity:0.3}
+}
+#dot2{animation:dot2 ease 2s infinite alternate}  /*渐隐渐现小点*/
+
+@keyframes purpleCircle{
+    0% {transform:scale(0); transform-origin:420.6px 289.1px}
+    100% {transform:scale(1.5);transform-origin:420.6px 289.1px}
+}
+#purpleCircle{animation:purpleCircle linear 1.5s 1s both}    /*最大圆*/
+
+@keyframes whiteCircle{
+    0% {transform:scale(0); transform-origin:420.6px 289.1px}
+    100% {transform:scale(3);transform-origin:420.6px 289.1px}
+}
+#whiteCircle{animation:whiteCircle linear 1.5s 1.5s both}    /*中间圆*/
+
+
+@keyframes blueCircle{
+    0% {transform:scale(0); transform-origin:420.6px 289.1px}
+    90% {transform:scale(1.7);transform-origin:420.6px 289.1px}
+    100% {transform:scale(0);transform-origin:420.6px 289.1px}
+}
+#blueCircle{animation:blueCircle linear 1.5s 1.5s both}    /*最小圆*/
+
+
+@keyframes triangle{
+    0% {transform:scaleY(0);transform-origin:643.2px 286.5px}
+    100%{transform:scaleY(1);transform-origin:643.2px 286.5px}
+}
+.triangle{animation:triangle linear 1s 2s both}  /*两个三角形从无到有*/
+
+
+@keyframes triLeft{
+    0% {transform:scaleY(1)scaleX(1);transform-origin:94px 286.5px}
+    100%{transform:scaleY(0.15)scaleX(0.07);transform-origin:94px 286.5px}
+}
+.triLeft{animation:triLeft linear 1.5s 3s both}  /*左侧三角形向左水平缩小*/
+
+
+@keyframes triRight{
+    0% {transform:scaleY(1)scaleX(1);transform-origin:727px 286.5px;}
+    100%{transform:scaleY(0.6)scaleX(0.4);transform-origin:727px 286.5px; }
+}
+#triRight{animation:triRight linear 0.5s 3s both}  /*右侧三角形向右水平缩小*/
+
+
+
+@keyframes p2Circle{
+    0% {transform:scale(0); transform-origin:420.6px 289.1px}
+    50% {transform:scale(1);transform-origin:420.6px 289.1px}
+    100% {transform:scale(0);transform-origin:420.6px 289.1px}
+}
+#p2Circle{animation:p2Circle linear 1.5s 3s both}    /*紫色圆*/
+
+
+@keyframes yellowCircle{
+    0% {transform:scale(0); transform-origin:538.9px 286.5px}
+    50% {transform:scale(1);transform-origin:538.9px 286.5px}
+    100% {transform:scale(0);transform-origin:538.9px 286.5px}
+}
+.clipCircle{animation:yellowCircle linear 1.5s 3s both}    /*黄白色圆*/
+
+
+@keyframes heart{
+    0% {opacity:0; transform:scale(0); transform-origin:420.6px 289.1px}
+    100% {opacity:1;transform:scale(1);transform-origin:420.6px 289.1px}
+}
+#heart{animation:heart linear 4s 3.5s both}    /*心形*/
+
+
+@keyframes newbase{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#newbase{animation:newbase linear 1s 4.5s both} /*底部大的正方形 白色加蓝色*/
+
+
+@keyframes semi1{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#semi1{animation:semi1 linear 1s 5.5s both} /*底层半圆环*/
+
+@keyframes semi2{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#semi2{animation:semi2 linear 1s 6.5s both}  /*上层半圆环*/
+
+@keyframes bottom{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#bottom{animation:bottom ease 2s 4.5s both}  /*底部白色条*/
+
+@keyframes cubic{
+    0%{transform:scale(0);transform-origin:264.6px 482.5px}
+    100%{transform:scale(1);transform-origin:264.6px 482.5px}
+}
+#cubic{animation:cubic ease 1.5s 6s both} /*左下角立方体*/
+
+
+@keyframes yellowRec{
+    0%{transform:scaleX(0); transform-origin:575px 188px}
+    20%{transform:scaleX(1); transform-origin:575px 188px}
+    100%{transform:translateX(-242px)}
+}
+#yellowRec{animation:yellowRec ease 2s 6.5s both} /*右上角黄色矩形条*/
+
+
+@keyframes pinkRec{
+    0%{transform:scaleX(0); transform-origin:0px 487.6px; fill:#3661ff}
+    100%{transform:scaleX(1); transform-origin:0px 487.6px; fill: #ff0d70;}
+}
+#pinkRec{animation:pinkRec ease 2s 6.5s both} /*左下角粉色矩形条*/
+
+
+
+@keyframes txt1{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#txt1{animation:txt1 linear 0.5s 5.5s both} /*最后一行文本*/
+
+
+@keyframes txt2{
+    0%{opacity:0;}
+    100%{opacity:1; transform:translateY(-22px);transform-origin:655.5px 105.6px}
+}
+#txt2{animation:txt2 linear 0.5s 6s both} /*倒数第二行文本*/
+
+@keyframes txt3{
+    0%{opacity:0;transform:translateY(-22px);transform-origin:655.5px 105.6px}
+    100%{opacity:1; transform:translateY(-44px);transform-origin:655.5px 105.6px}
+}
+#txt3{animation:txt3 linear 1s 6.5s both} /*第二行文本*/
+
+
+@keyframes txt4{
+    0%{opacity:0;transform:translateY(-44px);transform-origin:655.5px 105.6px}
+    100%{opacity:1; transform:translateY(-66px);transform-origin:655.5px 105.6px}
+}
+#txt4{animation:txt4 linear 1.5s 7s both} /*第一行文本*/
+
+
+
+@keyframes txtGroup{
+    0%{opacity:1}
+    100%{opacity:0}
+}
+#txtGroup{animation:txtGroup linear 0.5s 8.5s both} /*文本组*/
+
+
+@keyframes blackdot{
+    0%{opacity:0}
+    10%{transform:translateX(200px); transform-origin:575px 436.7px;opacity:1}
+    100%{transform:translateX(10px); transform-origin:575px 436.7px; }
+}
+#blackdot{animation:blackdot linear 2s 7s both} /*一排圆点*/
+
+
+@keyframes maskXY{
+    0%{transform:translate(0, 0);}
+    100%{transform:translate(-71px, -71px);  }
+}
+#maskXY{animation:maskXY linear 3s 5s both} /*移动蒙版*/

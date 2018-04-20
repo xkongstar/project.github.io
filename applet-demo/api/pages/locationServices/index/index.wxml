@@ -1,0 +1,19 @@
+<!--pages/gordes/index/index.wxml-->
+<view>
+    <button bindtap="getPOI">获取POI数据</button>
+    <text style="font-size: 24rpx;">
+        参考文档：
+        高德位置服务
+        http://lbs.amap.com/api/wx/gettingstarted/
+        腾讯位置服务
+        http://lbs.qq.com/qqmap_wx_jssdk/index.html
+        应用场景：
+        · 搜索周边poi，比如：“酒店” “餐饮” “娱乐” “学校” 等等
+        · 用于获取输入关键字的补完与提示，帮助用户快速输入
+        · 获取全国城市列表数据
+        · 通过城市ID返回城市下的区县
+        · 计算一个点到多点的步行、驾车距离
+        · 获取实时天气数据
+        ......
+    </text>
+</view>

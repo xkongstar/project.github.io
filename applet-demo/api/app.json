@@ -1,6 +1,9 @@
 {
   "pages":[    
-    "pages/index/index",    
+    "pages/index/index",
+    "pages/createMapContext/createMapContext",
+    "pages/locationServices/index/index",  
+    "pages/locationServices/POI/POI",                
     "pages/toilet/index/index",    
     "pages/toilet/location/location",  
     "pages/toilet/location-detail/location",              
@@ -12,8 +15,7 @@
     "pages/card/card",
     "pages/chooseAddress/chooseAddress",
     "pages/QRCode/QRCode",
-    "pages/share/share",
-    "pages/getLocation/getLocation",
+    "pages/share/share",   
     "pages/openLocation/openLocation",
     "pages/canvas/canvas",
     "pages/templateMessage/templateMessage",

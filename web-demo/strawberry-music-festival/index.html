@@ -1,0 +1,235 @@
+<!--
+原文地址
+ https://juejin.im/post/5ab05123518825556e5de7d4
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>SVG+CSS3仿作了2018草莓音乐节的宣传视频动画</title>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+    <symbol>
+        <clipPath id="mix"><!-- 定义剪切蒙版 -->
+            <polygon class="triLeft" points="94,418.94 643.221,286.5 94,154.06 "/>
+        </clipPath>
+    </symbol>
+
+
+    <symbol id="letters"><!-- 定义文本 -->
+        <text transform="translate(533.4 112.4)" style="font-size: 28px;font-family: Arial-BoldMT, Arial;font-weight: 700">VISUA<tspan x="85.6" y="0" style="letter-spacing: -0.01806640625em">L</tspan><tspan x="102.2" y="0"> </tspan><tspan x="109.9" y="0" style="letter-spacing: -0.037109375em"> </tspan><tspan x="116.7" y="0">ANIMALS</tspan></text>
+    </symbol>
+
+
+
+
+    <g id="base"><!-- 底图部分 -->
+        <rect width="800" height="600" style="fill: #f9196a"/>
+    </g>
+    <g id="dot">
+        <g id="dot1">
+            <circle  cx="758.8" cy="142.4" r="11.7" style="fill: #fff599;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+            <circle cx="770.5" cy="495.1" r="11.7" style="fill: #92fcf9;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+            <circle cx="32.5" cy="360.7" r="11.7" style="fill: #ffa015;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+            <circle cx="55.9" cy="94.1" r="11.7" style="fill: #b107e8;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+        </g>
+        <g id="dot2">
+            <circle cx="738.5" cy="312.4" r="11.7" style="fill: #cf44fc;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+
+            <circle cx="72.5" cy="472.4" r="11.7" style="fill: #15ffe8;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+
+            <circle cx="91.5" cy="215" r="11.7" style="fill: #12ff7d;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+        </g>
+    </g>
+    <g id="moveDown">
+        <rect x="139.3" y="-14.4" width="60" height="60" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="45.5" width="60" height="60" style="fill: #d60f5b;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="105.5" width="60" height="60" style="fill: #0e3ed8;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="402.4" width="60" height="239.99" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="162.4" width="60" height="60" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="222.4" width="60" height="60" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="342.4" width="60" height="60" style="fill: #bdfff5;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <circle cx="168.6" cy="193.6" r="9.7" style="fill: #12ff7d;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <circle cx="169.3" cy="15.5" r="10" style="fill: #12ff7d;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="139.3" y="282.4" width="60" height="60" style="fill: #d60f5b;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="419" y="-74.4" width="218" height="336.87" style="fill: #19d1b2;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="419" y="488.3" width="218" height="224.31" style="fill: #d028e8;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="419" y="263.3" width="218" height="224.31" style="fill: #f2c2e3;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+    </g>
+    <g id="moveUp">
+        <rect x="636.8" y="-37.6" width="60" height="60" style="fill: #f2c2e3;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="22.4" width="60" height="60" style="fill: #d60f5b;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="82.4" width="60" height="60" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="142.4" width="60" height="239.99" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="382.4" width="60" height="60" style="fill: #0e3ed8;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="442.4" width="60" height="60" style="fill: #d60f5b;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="502.4" width="60" height="60" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="636.8" y="562.4" width="60" height="60" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <circle cx="666.8" cy="532.4" r="10" style="fill: #12ff7d;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="199.3" y="-74.4" width="218.8" height="336.87" style="fill: #f2c2e3;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="199.3" y="263.3" width="218.8" height="224.31" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <rect x="199.3" y="487.8" width="218.8" height="224.31" style="fill: #fc7944;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+    </g>
+    <g id="baseCenter">
+        <path d="M279.4,162.8c-69.7,78-63.1,197.8,14.9,267.5L546.9,147.9C468.9,78.2,349.2,84.8,279.4,162.8Z" style="fill: #e6faff;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <path d="M561.8,415.4c69.7-78,63.1-197.8-14.9-267.5L294.3,430.3C372.3,500.1,492.1,493.4,561.8,415.4Z" style="fill: #4e99f2;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+    </g>
+    <g id="centerCircle">
+        <path d="M478.6,171.1,362.7,407.2A131.5,131.5,0,0,0,478.6,171.1Z" style="fill: #4f06ef;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+        <path d="M302.6,231.2a131.5,131.5,0,0,0,60.1,176L478.6,171.1A131.5,131.5,0,0,0,302.6,231.2Z" style="fill: #d028e8;stroke: #000;stroke-miterlimit: 10;stroke-width: 8px"/>
+    </g>
+    <g id="purpleCircle">
+        <circle cx="420.6" cy="289.1" r="600" style="fill: #d028e8; stroke: #000;stroke-miterlimit: 10;stroke-width: 8px; vector-effect:non-scaling-stroke;"/>
+    </g>
+    <g id="whiteCircle">
+        <circle cx="420.6" cy="289.1" r="200" style="fill: #e6faff; stroke: #000;stroke-miterlimit: 10;stroke-width: 8px;vector-effect:non-scaling-stroke"/>
+    </g>
+    <g id="blueCircle">
+        <circle cx="420.6" cy="289.1" r="100" style="fill: #0f61d6; stroke: #000;stroke-miterlimit: 10;stroke-width: 8px;vector-effect:non-scaling-stroke"/>
+    </g>
+    <g class="triangle">
+        <polygon class="triLeft" style="fill:#2AFFF6;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:10; vector-effect:non-scaling-stroke" points="94,418.94 643.221,286.5 94,154.06 	"/>
+        <polygon id="triRight" style="fill:#FF2CFF;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:10; vector-effect:non-scaling-stroke" points="727,266.297
+		643.221,286.5 727,306.703 	"/>
+    </g>
+
+
+    <g id="p2Circle">
+        <circle cx="420.6" cy="289.1" r="144.1" style="fill: #e52cff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px; vector-effect:non-scaling-stroke"/>
+    </g>
+
+
+    <circle  class="clipCircle" cx="538.9" cy="286.5" r="62.5" style="fill: #ffe566;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px; vector-effect:non-scaling-stroke"/>
+
+    <g clip-path="url(#mix)"  > <!-- 使用剪切蒙版 -->
+        <circle  class="clipCircle" cx="538.9" cy="286.5" r="62.5" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px; vector-effect:non-scaling-stroke"/>
+    </g>
+
+    <g class="triangle">
+        <polygon class="triLeft" style="fill:none;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:10; vector-effect:non-scaling-stroke" points="94,418.94 643.221,286.5 94,154.06 	"/> <!--三角形只有描边无填充属性-->
+    </g>
+
+    <g id="newbase">  <!--底部方形-->
+        <rect x="0" y="0" width="800" height="600" style="fill: #d9faff;"/>
+        <rect x="279.4" y="156.6" width="133.6" height="264.11" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+        <rect x="413" y="156.6" width="162.5" height="264.11" style="fill: #22eaff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+    </g>
+
+    <g id="semi1">   <!--新的底层半圆环-->
+        <g>
+            <path d="M419,137.4,424,441a151.8,151.8,0,0,0-5-303.6Z" style="fill: #ff0d70;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+            <path d="M281.4,291.4A139.2,139.2,0,0,0,422.9,428.4l-4.6-278.4A139.2,139.2,0,0,0,281.4,291.4Z" style="fill: #3661ff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+        </g>
+        <circle cx="420.6" cy="289.1" r="48.6" style="fill: #fff;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 6px"/>
+    </g>
+    <g id="semi2"><!--新的上层半圆环-->
+        <g>
+            <path d="M419.1,193.4l3.1,191.4a95.7,95.7,0,0,0-3.1-191.4Z" style="fill: #d028e8;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+            <path d="M324.9,290.7a95.7,95.7,0,0,0,97.3,94.1l-3.1-191.4A95.7,95.7,0,0,0,324.9,290.7Z" style="fill: #c5f7ff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+        </g>
+        <circle cx="420.6" cy="289.1" r="48.6" style="fill: #fff;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 6px"/>
+    </g>
+
+
+    <g id="heart">  <!--中间的心形-->
+        <path d="M444.6,279.5a18.3,18.3,0,0,1-.9,6c-4.4,13.1-23,25.3-23,25.3s-18.6-12.2-23-25.3a18.3,18.3,0,0,1-.9-6c0-6.5,5.7-11.9,12.2-11.9a11.7,11.7,0,0,1,11.7,11.7,11.7,11.7,0,0,1,11.7-11.7C438.8,267.6,444.6,273,444.6,279.5Z"  style="fill: #f44e7a;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 6px; "/>
+    </g>
+
+
+
+    <g id="bottom">    <!--底部白色条-->
+        <rect x="279.4" y="420.7" width="296.1" height="31.99" style="fill:#fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 6px"/>
+    </g>
+
+
+    <mask id="txtMove">
+        <rect x="279.4" y="420.7" width="296.1" height="31.99" style="fill:#fff"/><!-- 定义底部横排小圆点的蒙版-->
+    </mask>
+
+    <g mask="url(#txtMove)">
+        <g id="blackdot" >   <!--底部一排圆点-->
+            <circle cx="460" cy="436.7" r="3.2"/>
+            <circle cx="475" cy="436.7" r="3.2"/>
+            <circle cx="490" cy="436.7" r="3.2"/>
+            <circle cx="505" cy="436.7" r="3.2"/>
+            <circle cx="520" cy="436.7" r="3.2"/>
+            <circle cx="535" cy="436.7" r="3.2"/>
+            <circle cx="550" cy="436.7" r="3.2"/>
+            <circle cx="565" cy="436.7" r="3.2"/>
+            <circle cx="580" cy="436.7" r="3.2"/>
+            <circle cx="595" cy="436.7" r="3.2"/>
+            <circle cx="610" cy="436.7" r="3.2"/>
+            <circle cx="625" cy="436.7" r="3.2"/>
+            <circle cx="640" cy="436.7" r="3.2"/>
+            <circle cx="655" cy="436.7" r="3.2"/>
+        </g>
+    </g>
+
+
+    <g id="cubic">     <!--左下角立方体-->
+        <polygon points="473.7 421 325.3 421 325.3 260.8 473.7 421" style="fill: #ffcce8;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 6px"/>
+        <polygon points="473.7 421 413 482.5 264.6 482.5 264.6 481.4 325.3 421 473.7 421" style="fill: #22eaff;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10;stroke-width: 6px"/>
+        <polygon points="325.3 260.8 325.3 421 264.6 481.4 264.6 322.3 325.3 260.8" style="fill: #fff;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 6px"/>
+    </g>
+
+    <mask id="maskMove"> <!--定义渐变蒙版-->
+        <g id="maskXY">
+            <defs>
+                <linearGradient  id="jianbian" x1="38.29" y1="140.92" x2="253.11" y2="140.92" gradientTransform="translate(25.4 12.6) scale(0.72 1)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#fff"/>
+                    <stop offset="1"/>
+                </linearGradient>
+            </defs>
+
+            <rect x="70.8" y="33.2" width="129.1" height="240.67" transform="translate(148.2 -50.8) rotate(45)"  style="fill: url(#jianbian)"/>
+
+        </g>
+    </mask>
+
+
+    <g mask="url(#maskMove)"> <!--使用渐变模板-->
+        <g id="dotGroup">   <!--左上角一群圆点-->
+            <path d="M104.1,88a5.4,5.4,0,0,1-5.4,5.4A5.5,5.5,0,0,1,93.3,88a5.4,5.4,0,0,1,5.4-5.4A5.3,5.3,0,0,1,104.1,88Z"/>
+            <path d="M78.2,103.3a5.3,5.3,0,1,1-5.3,5.3A5.4,5.4,0,0,1,78.2,103.3Z"/>
+            <path d="M124.5,67.4a5.1,5.1,0,0,1-5.2,5.1,5.2,5.2,0,0,1-5.1-5.2,5.2,5.2,0,0,1,5.1-5.1A5.2,5.2,0,0,1,124.5,67.4Z"/>
+            <path d="M57.5,124.2a5,5,0,0,1,5,5,5,5,0,0,1-5,5.1,5.1,5.1,0,0,1-5.1-5.1A5,5,0,0,1,57.5,124.2Z"/>
+            <path d="M73.3,87.9a4.9,4.9,0,1,1,4.8,4.9A4.9,4.9,0,0,1,73.3,87.9Z"/>
+            <path d="M98.8,62.7A4.8,4.8,0,1,1,94,67.3,4.8,4.8,0,0,1,98.8,62.7Z"/>
+            <path d="M52.8,108.7a4.6,4.6,0,0,1,4.7-4.7,4.7,4.7,0,0,1,4.7,4.7,4.8,4.8,0,0,1-4.7,4.7A4.7,4.7,0,0,1,52.8,108.7Z"/>
+            <path d="M139.9,51.4a4.7,4.7,0,1,1,4.7-4.6A4.6,4.6,0,0,1,139.9,51.4Z"/>
+            <path d="M36.9,154.3a4.4,4.4,0,1,1,4.4-4.5A4.4,4.4,0,0,1,36.9,154.3Z"/>
+            <path d="M119.4,42.4a4.4,4.4,0,0,1,4.4,4.3,4.4,4.4,0,0,1-4.4,4.4,4.4,4.4,0,0,1-4.4-4.4A4.3,4.3,0,0,1,119.4,42.4Z"/>
+            <path d="M82.5,67.6a4.3,4.3,0,1,1-4.2-4.4A4.3,4.3,0,0,1,82.5,67.6Z"/>
+            <path d="M36.9,133.4a4.2,4.2,0,0,1-4.2-4.2,4.2,4.2,0,0,1,4.2-4.3,4.3,4.3,0,0,1,4.3,4.3A4.2,4.2,0,0,1,36.9,133.4Z"/>
+            <path d="M53.3,87.9a4.2,4.2,0,0,1,4.3-4.1A4.2,4.2,0,0,1,61.8,88a4.3,4.3,0,0,1-4.3,4.2A4.2,4.2,0,0,1,53.3,87.9Z"/>
+            <path d="M32.9,108.6a4,4,0,0,1,4-3.9,4,4,0,0,1,3.9,3.9,4,4,0,0,1-4,4A4,4,0,0,1,32.9,108.6Z"/>
+            <path d="M102.7,46.8a4,4,0,0,1-4,4,4,4,0,0,1-4-3.9,4,4,0,0,1,4-4.1A4,4,0,0,1,102.7,46.8Z"/>
+            <path d="M57.5,63.8a3.6,3.6,0,0,1,.1,7.3,3.7,3.7,0,0,1-3.7-3.6A3.6,3.6,0,0,1,57.5,63.8Z"/>
+            <path d="M78.2,43.3a3.5,3.5,0,1,1-.1,7,3.5,3.5,0,0,1,.1-7Z"/>
+            <path d="M40.3,88a3.5,3.5,0,1,1-7-.1,3.5,3.5,0,0,1,3.5-3.4A3.5,3.5,0,0,1,40.3,88Z"/>
+            <path d="M60.2,46.8a2.7,2.7,0,0,1-2.7,2.7,2.8,2.8,0,0,1-2.7-2.7,2.7,2.7,0,0,1,2.8-2.7A2.7,2.7,0,0,1,60.2,46.8Z"/>
+            <path d="M36.8,64.7a2.7,2.7,0,0,1,2.7,2.7,2.7,2.7,0,0,1-2.7,2.8,2.8,2.8,0,0,1-2.7-2.7A2.7,2.7,0,0,1,36.8,64.7Z"/>
+            <path d="M38.5,46.7a1.6,1.6,0,0,1-1.5,1.7,1.7,1.7,0,0,1-1.7-1.6,1.6,1.6,0,0,1,1.6-1.6A1.6,1.6,0,0,1,38.5,46.7Z"/>
+        </g>
+    </g>
+
+
+    <g id="yellowRec">   <!--黄色矩形条-->
+        <rect x="521" y="175.5" width="53.6" height="25.33" style="fill: #fff30d;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 6px"/>
+    </g>
+    <g id="pinkRec">  <!--粉色矩形条-->
+        <rect x="0" y="459.7" width="170" height="25.33" style="stroke: #000;stroke-miterlimit: 10;stroke-width: 6px;vector-effect:non-scaling-stroke"/>
+    </g>
+
+    <g id="txtGroup">
+        <use xlink:href="#letters" id="txt1"/>
+        <use xlink:href="#letters" id="txt2"/>
+        <use xlink:href="#letters" id="txt3"/>
+        <use xlink:href="#letters" id="txt4"/>
+    </g>
+
+</svg>
+</body>
+</html>
