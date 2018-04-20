@@ -1,0 +1,4 @@
+<!--pages/animation/animation.wxml-->
+<view class="container">
+    <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+</view>

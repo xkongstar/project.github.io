@@ -1,6 +1,7 @@
 {
   "pages":[    
     "pages/index/index",
+    "pages/animation/animation",
     "pages/createMapContext/createMapContext",
     "pages/locationServices/index/index",  
     "pages/locationServices/POI/POI",                

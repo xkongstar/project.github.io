@@ -29,6 +29,10 @@
   </view>
 
   <view>
+    <button bindtap="animation">动画</button>
+  </view>
+
+  <view>
     <button bindtap="toTemplateMessage">模板消息</button>
   </view>
 

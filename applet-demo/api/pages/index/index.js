@@ -203,10 +203,17 @@ Page({
         })
     },
 
-    //高德开发平台
+    //位置服务
     locationServices: function (){
         wx.navigateTo({
             url: '../locationServices/index/index'
+        })
+    },
+
+    //动画
+    animation: function (){
+        wx.navigateTo({
+            url: '../animation/animation'
         })
     }
 })
