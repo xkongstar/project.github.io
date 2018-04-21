@@ -19,3 +19,6 @@
 .userinfo-nickname {
   color: #aaa;
 }
+button{
+  margin-top: 30rpx;
+}
