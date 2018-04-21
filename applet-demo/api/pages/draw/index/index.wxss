@@ -1,0 +1,5 @@
+/* pages/draw/index/index.wxss */
+.myCanvas{
+    border: 1px solid;
+    margin-top: 30rpx;
+}

@@ -1,0 +1,8 @@
+<!--pages/draw/index/index.wxml-->
+<view class="container">
+    <text>
+        在Canvas上画图
+        所有在 "canvas" 中的画图必须用 JavaScript 完成
+    </text>
+    <canvas canvas-id="myCanvas1" class="myCanvas"/>
+</view>

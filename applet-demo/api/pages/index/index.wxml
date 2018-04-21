@@ -1,11 +1,11 @@
 <!--index.wxml-->
 <view class="container">
+  <!-- API -->
   <view>
     <view style="text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;"> API </view>
     <!-- 登录获取用户信息 -->
     <view class="userinfo">
       <!--wx.getStorageSync(); wx.setStorageSync wx.login(); wx.getSetting(); wx.getUserInfo-->
-
       <!--
         open-type="getUserInfo" 生效时，
         bindgetuserinfo="Handler"
@@ -20,11 +20,13 @@
       </block>
     </view>
     <view>
-      <!--getPhoneNumber(OBJECT)-->
       <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取微信用户绑定的手机号</button>
     </view>
     <view>
       <button bindtap="animation">动画</button>
+    </view>
+    <view>
+      <button bindtap="draw">绘图</button>
     </view>
     <view>
       <button bindtap="toTemplateMessage">模板消息</button>

@@ -215,5 +215,13 @@ Page({
         wx.navigateTo({
             url: '../animation/animation'
         })
+    },
+
+    //绘图
+    draw: function(){
+        wx.navigateTo({
+            url: '../draw/index/index'
+        })
     }
+
 })
