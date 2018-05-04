@@ -222,6 +222,41 @@ Page({
         wx.navigateTo({
             url: '../draw/index/index'
         })
-    }
+    },
+
+    //跳转到 生成运势图
+    fortune: function () {
+        wx.navigateTo({
+            url: '../fortune/index/index'
+        })
+    },
+
+    //承载网页的容器
+    webView(){
+        wx.navigateTo({
+            url: '../open/webView/webView'
+        })
+    },
+
+    //展示微信开放的数据
+    openData(){
+        wx.navigateTo({
+            url: '../open/openData/openData'
+        })
+    },
+
+    //设备
+    equipment(){
+        wx.navigateTo({
+            url: '../equipment/equipment'
+        })
+    },
+
+    //节点信息
+    selectorQuery(){
+        wx.navigateTo({
+            url: '../selectorQuery/selectorQuery'
+        })
+    },
 
 })

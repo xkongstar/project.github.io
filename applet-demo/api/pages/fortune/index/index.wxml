@@ -1,0 +1,13 @@
+<!--pages/fortune/index/index.wxml-->
+<view class="container index-wrap">
+    <view class='index-head-input-wrap' style="margin:200rpx;">
+        <image class='index-head-input-img' src='{{indexHeadInputBgSrc}}'></image>
+        <view class='index-head-input-context'>
+            <text class='index-head-text index-head-input-title'>请输入你的名字</text>
+            <input class='fortune-input' bindinput="bindNameInput" style='text-align:center;'></input>
+            <button class='btn' style='margin-top:56rpx;width:324rpx;' bindtap="getUserFortune"> 测一测 </button>
+            <text class='index-head-text index-head-input-title-desc'>点击[测一测]按钮，查看你的狗年运势</text>
+        </view>
+    </view>
+</view>
+

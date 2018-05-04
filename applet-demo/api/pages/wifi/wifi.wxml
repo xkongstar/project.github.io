@@ -1,0 +1,17 @@
+<!--pages/wifi/wifi.wxml-->
+<text>
+    连接指定 Wi-Fi 接口调用时序：
+
+    Android：
+    startWifi —> connectWifi —> onWifiConnected
+
+    iOS（仅iOS 11及以上版本支持）：
+    startWifi —> connectWifi —> onWifiConnected
+
+    连周边 Wi-Fi 接口调用时序：
+    Android
+    startWifi —> getWifiList —> onGetWifiList —> connectWifi —> onWifiConnected
+
+    iOS（iOS 11.0及11.1版本因系统原因暂不支持）：
+    startWifi —> getWifiList —> onGetWifiList —> setWifiList —> onWifiConnected
+</text>

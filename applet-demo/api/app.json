@@ -1,8 +1,16 @@
 {
-  "pages":[    
-    "pages/draw/index/index",
+  "pages":[            
     "pages/index/index",
-    
+    "pages/selectorQuery/selectorQuery",    
+    "pages/wifi/wifi",    
+    "pages/equipment/equipment",    
+    "pages/bluetoothAdapter/bluetoothAdapter",   
+    "pages/iBeacon/iBeacon",        
+    "pages/open/openData/openData",    
+    "pages/open/webView/webView",    
+    "pages/fortune/index/index",  
+    "pages/fortune/fortune-result/fortune-result",         
+    "pages/draw/index/index",        
     "pages/animation/animation",
     "pages/createMapContext/createMapContext",
     "pages/locationServices/index/index",  

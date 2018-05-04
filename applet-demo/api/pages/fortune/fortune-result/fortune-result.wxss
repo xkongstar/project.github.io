@@ -1,0 +1,54 @@
+/* pages/fortune/fortune-result/fortune-result.wxss */
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+page{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    display: block;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #F7F7FA;
+    letter-spacing: 0.1px;
+    background-image: linear-gradient(-180deg, rgba(247,116,199,1.00) 0%, rgba(254,151,183,1.00) 100%);
+}
+.btn-pierced{
+    display: block;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #F7F7FA;
+    letter-spacing: 0.1px;
+    border: 1px solid #FE97B7;
+    background: rgba(255,255,255,0);
+}
+.result-page{
+    height: 100%;
+}
+.wrap {
+    height: auto;
+    min-height: 100%;
+    background-color: #080E3A;
+}
+.main {
+    padding-bottom: 80px;
+}
+.footer{
+    height:80px;
+    margin-top: -80px;
+    display: flex;
+    /* background-image: linear-gradient(-180deg, #080E3A 98%, #080E3A 100%); */
+    background-color: #080E3A;
+}
+
+.btn-layout{
+    flex: 1;
+}
+.btn-width{
+    width: 306rpx;
+}

@@ -5,4 +5,21 @@
         所有在 "canvas" 中的画图必须用 JavaScript 完成
     </text>
     <canvas canvas-id="myCanvas1" class="myCanvas"/>
+
+    <!-- canvas坐标系 -->
+    <view style="margin:40rpx 0 0 0">当你把手指放到 canvas 中，就会在下边显示出触碰点的坐标</view>
+    <canvas canvas-id="myCanvas2" class="myCanvas"
+            bindtouchstart="start"
+            bindtouchmove="move"
+            bindtouchend="end"/>
+    <view hidden="{{hidden}}">
+        Coordinates: ({{x}}, {{y}})
+    </view>
+
+    <!--
+     渐变
+     渐变能用于填充一个矩形，圆，线，文字等。填充色可以不固定位固定的一种颜色
+     -->
+    <canvas canvas-id="myCanvas3" class="myCanvas"/>
+    <canvas canvas-id="myCanvas4" class="myCanvas"/>
 </view>

@@ -1,0 +1,4 @@
+<!--pages/open/openData/openData.wxml-->
+<open-data type="userAvatarUrl" style="width: 200rpx;height: 200rpx;display: inline-block;"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>
+<open-data type="userCity" lang="zh_CN"></open-data>

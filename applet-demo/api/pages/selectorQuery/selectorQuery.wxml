@@ -1,0 +1,2 @@
+<view id="the-id"></view>
+<button bindtap="queryMultipleNodes">返回一个SelectorQuery对象实例</button>

@@ -1,0 +1,2 @@
+<!--pages/open/webView/webView.wxml-->
+<web-view src="https://www.baidu.com/"></web-view>

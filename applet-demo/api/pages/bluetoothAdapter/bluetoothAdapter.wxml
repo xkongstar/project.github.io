@@ -1,0 +1,3 @@
+<button bindtap="openBluetoothAdapter">打开蓝牙</button>
+<button bindtap="closeBluetoothAdapter" style="margin-top: 30rpx;">关闭蓝牙</button>
+<button bindtap="getBluetoothAdapterState" style="margin-top: 30rpx;">获取本机蓝牙适配器状态</button>

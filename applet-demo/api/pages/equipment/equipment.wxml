@@ -1,0 +1,16 @@
+<!--pages/equipment/equipment.wxml-->
+<button bindtap="getNetworkType">获取网络类型</button>
+<button bindtap="setScreenBrightness" style="margin-top: 30rpx;">设置屏幕亮度</button>
+<button bindtap="getScreenBrightness" style="margin-top: 30rpx;">获取屏幕亮度</button>
+<button bindtap="vibrateLong" style="margin-top: 30rpx;">使手机发生振动</button>
+<button bindtap="vibrateShort" style="margin-top: 30rpx;">使手机发生振动(时间更短些)</button>
+<button bindtap="onAccelerometerChange" style="margin-top: 30rpx;">监听加速度数据</button>
+<button bindtap="onCompassChange" style="margin-top: 30rpx;">监听罗盘数据</button>
+<button bindtap="scanCode" style="margin-top: 30rpx;">调起客户端扫码界面</button>
+<button bindtap="setClipboardData" style="margin-top: 30rpx;">设置系统剪贴板的内容</button>
+<button bindtap="getClipboardData" style="margin-top: 30rpx;">获取系统剪贴板内容</button>
+<button bindtap="bluetoothAdapter" style="margin-top: 30rpx;">蓝牙适配器接口</button>
+<button bindtap="iBeacon" style="margin-top: 30rpx;">iBeacon</button>
+<button style="margin-top: 30rpx;">用户使用系统截屏按键截屏时触发此事件</button>
+<button bindtap="addPhoneContact" style="margin-top: 30rpx;">添加手机联系人</button>
+<button bindtap="wifi" style="margin-top: 30rpx;">Wi-Fi</button>

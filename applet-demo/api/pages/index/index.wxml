@@ -58,11 +58,25 @@
     <view>
       <button bindtap="authority">再次获取权限</button>
     </view>
+    <view>
+      <button bindtap="equipment">设备</button>
+    </view>
+    <view>
+      <button bindtap="selectorQuery">WXML节点信息API</button>
+    </view>
+    <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">开放能力</view>
+    <view>
+      <button bindtap="webView">承载网页的容器</button>
+    </view>
+    <view>
+      <button bindtap="openData">展示微信开放的数据</button>
+    </view>
+
   </view>
 
   <!-- 下面的需要后台配合 -->
   <view>
-    <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">下面的需要后台配合</view>
+    <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">下面的需要后台配合</view>
     <view>
       <button bindtap="card">卡券</button>
     </view>
@@ -79,7 +93,7 @@
 
   <!-- 功能块 -->
   <view>
-    <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">功能块</view>
+    <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">功能块</view>
     <view>
       <button bindtap="toSlideMenu">侧滑菜单</button>
     </view>
@@ -87,13 +101,16 @@
       <button bindtap="toilet">找厕所</button>
     </view>
     <view>
-      <button bindtap="tocanvas">canvas</button>
+      <button bindtap="tocanvas">生成分享图</button>
+    </view>
+    <view>
+      <button bindtap="fortune">生成运势图</button>
     </view>
   </view>
 
   <!-- SDK -->
   <view>
-    <view style="margin-top: 30rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">SDK</view>
+    <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">SDK</view>
     <view>
       <button bindtap="locationServices">位置服务</button>
     </view>
