@@ -2,13 +2,8 @@
 
 applet-demo 小程序项目
 
-	|choose-image 上传图片，图片预览
-
-	|leftSwiperDel	左滑删除
-
-	|MacDonald	仿麦当劳做的小程序
-
-	|qr-code	根据输入内容生成二维码
+	|api 小程序api练习
+	
 
 vue-demo	vue项目
 	
