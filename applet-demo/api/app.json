@@ -1,6 +1,22 @@
 {
   "pages":[            
     "pages/index/index",
+    "pages/gaode/page/index/index",
+    "pages/gaode/page/navigation_car/navigation",           
+    
+    "pages/gaode/page/regeo/regeo",
+    "pages/gaode/page/weather/weather",
+    "pages/gaode/page/poi/poi",
+    "pages/gaode/page/staticmap/staticmap",
+   
+    "pages/gaode/page/navigation_bus/navigation",
+    "pages/gaode/page/navigation_walk/navigation",
+    "pages/gaode/page/navigation_ride/navigation",
+    "pages/gaode/page/navigation_car_detail/navigation",
+    "pages/gaode/page/navigation_walk_detail/navigation",
+    "pages/gaode/page/navigation_ride_detail/navigation",
+    "pages/gaode/page/inputtips/input",      
+
     "pages/selectorQuery/selectorQuery",    
     "pages/wifi/wifi",    
     "pages/equipment/equipment",    

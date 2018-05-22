@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>计算器</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator {
+            border-radius: 12px;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        .calculator__display {
+            background-color: #222;
+            color: #fff;
+            font-size: 2em;
+            padding: 0.5em 0.75em;
+            text-align: right;
+        }
+        .calculator__keys {
+            background-color: #999;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1px;
+        }
+        .calculator__keys>* {
+            background-color: #fff;
+            padding: 0.5em 1.25em;
+            position: relative;
+            text-align: center;
+        }
+        .keys--operator {
+            background-color: #eee;
+        }
+        .key--equal {
+            background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+            grid-column: -2;
+            grid-row: 2/span 4;
+        }
+        .calculator__keys>*:active::before,
+        .calculator__keys>.is-depressed::before {
+            content: "";
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5) inset;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div class="calculator">
+    <div class="calculator__display">0</div>
+    <div class="calculator__keys">
+        <button class="keys--operator" data-action="add">+</button>
+        <button class="keys--operator" data-action="sub">-</button>
+        <button class="keys--operator" data-action="multi">*</button>
+        <button class="keys--operator" data-action="div">/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key--equal" data-action="calculate">=</button>
+    </div>
+</div>
+
+<script>
+    var calculator = document.querySelector('.calculator');
+    var display = calculator.querySelector('.calculator__display');
+    var keys = calculator.querySelector('.calculator__keys');
+    keys.addEventListener('click',function (e) {
+        if(e.target.matches('button')){
+            var key = e.target;
+            var action = key.dataset.action;
+            //点击按键时，运算键被按下状态提示应该取消
+            Array.from(key.parentNode.children).forEach(function (e) {
+                e.classList.remove("is-depressed");
+            });
+            if(!action){
+                //点击数字键
+                console.log('number');
+                if(calculator.dataset.over == '1'){
+                    display.textContent = '0';
+                    calculator.dataset.over = '2';
+                }
+                if(display.textContent === '0'){
+                    display.textContent = key.textContent;
+                }else{
+                    console.log(display.textContent);
+                    console.log(key.textContent);
+                    display.textContent += key.textContent;
+                }
+
+            }else if(action === 'add' || action === 'sub' || action === 'multi' || action === 'div'){
+                console.log('operator');
+                //点击运算键后，应该有该键被按下的状态提示
+                key.classList.add("is-depressed");
+                calculator.dataset.operator = action;
+                calculator.dataset.firstValue = display.textContent;
+                display.textContent = '0';
+            }else if(action === 'decimal'){
+                console.log('decimal');
+                //点击小数点后，小数点应该加载显示器显示的数字后面
+                //假如显示器上已经有小数点了，不应该响应这次点击
+                if(!display.textContent.includes('.')){
+                    display.textContent += "."
+                }
+            }else if(action === 'clear'){
+                //点击清除键
+                console.log('clear');
+                display.textContent = '0';
+                calculator.dataset.firstValue ='';
+                calculator.dataset.operator = '';
+            }else if(action === 'calculate'){
+                //点击计算键
+                console.log('calculate');
+                var firstValue = calculator.dataset.firstValue;
+                var operator = calculator.dataset.operator;
+                var secondValue =  display.textContent;
+                display.textContent = calculate(firstValue,operator,secondValue);
+                calculator.dataset.over = '1';
+            }
+        }
+    })
+    function calculate(firstValue,operator,secondValue) {
+        firstValue = parseFloat(firstValue);
+        secondValue = parseFloat(secondValue);
+        switch(operator){
+            case 'add':
+                return firstValue + secondValue;
+            case "sub":
+                return firstValue - secondValue;
+            case "multi":
+                return firstValue * secondValue;
+            case "div":
+                return firstValue / secondValue;
+            default:
+                return "NaN";
+        }
+    }
+</script>
+
+</body>
+</html>

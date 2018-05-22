@@ -114,5 +114,8 @@
     <view>
       <button bindtap="locationServices">位置服务</button>
     </view>
+    <view>
+      <button bindtap="gaode">高德平台</button>
+    </view>
   </view>
 </view>

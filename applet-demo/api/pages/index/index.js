@@ -259,4 +259,11 @@ Page({
         })
     },
 
+    //高德平台
+    gaode(){
+        wx.navigateTo({
+            url: '../gaode/page/index/index'
+        })
+    },
+
 })
