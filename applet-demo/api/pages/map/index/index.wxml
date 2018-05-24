@@ -1,0 +1,4 @@
+<!--pages/map/index/index.wxml-->
+<button bindtap="openLocation">使用微信内置地图查看位置</button>
+<button bindtap="chooseLocation" style="margin-top: 30rpx;">打开地图选择位置</button>
+<button bindtap="createMapContext" style="margin-top: 30rpx;">地图组件控制</button>

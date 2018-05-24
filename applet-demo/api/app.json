@@ -1,22 +1,11 @@
 {
   "pages":[            
     "pages/index/index",
-    "pages/gaode/page/index/index",
-    "pages/gaode/page/navigation_car/navigation",           
     
-    "pages/gaode/page/regeo/regeo",
-    "pages/gaode/page/weather/weather",
-    "pages/gaode/page/poi/poi",
-    "pages/gaode/page/staticmap/staticmap",
-   
-    "pages/gaode/page/navigation_bus/navigation",
-    "pages/gaode/page/navigation_walk/navigation",
-    "pages/gaode/page/navigation_ride/navigation",
-    "pages/gaode/page/navigation_car_detail/navigation",
-    "pages/gaode/page/navigation_walk_detail/navigation",
-    "pages/gaode/page/navigation_ride_detail/navigation",
-    "pages/gaode/page/inputtips/input",      
-
+   "pages/datetimePicker/datetimePicker",
+  
+      
+                       
     "pages/selectorQuery/selectorQuery",    
     "pages/wifi/wifi",    
     "pages/equipment/equipment",    
@@ -24,11 +13,9 @@
     "pages/iBeacon/iBeacon",        
     "pages/open/openData/openData",    
     "pages/open/webView/webView",    
-    "pages/fortune/index/index",  
-    "pages/fortune/fortune-result/fortune-result",         
+
     "pages/draw/index/index",        
-    "pages/animation/animation",
-    "pages/createMapContext/createMapContext",
+    "pages/animation/animation",   
     "pages/locationServices/index/index",  
     "pages/locationServices/POI/POI",                
     "pages/toilet/index/index",    
@@ -43,7 +30,9 @@
     "pages/chooseAddress/chooseAddress",
     "pages/QRCode/QRCode",
     "pages/share/share",   
-    "pages/openLocation/openLocation",
+    "pages/map/index/index",
+    "pages/map/createMapContext/createMapContext",
+   
     "pages/canvas/canvas",
     "pages/templateMessage/templateMessage",
     "pages/slideMenu/slideMenu",  

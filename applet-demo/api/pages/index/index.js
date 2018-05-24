@@ -117,13 +117,6 @@ Page({
         })
     },
 
-    //使用微信内置地图查看位置
-    openLocation: function(){
-        wx.navigateTo({
-            url: '../openLocation/openLocation'
-        })
-    },
-
     //获取二维码
     QRCode: function(){
         wx.navigateTo({
@@ -196,13 +189,6 @@ Page({
         })
     },
 
-    //地图组件控制
-    createMapContext: function(){
-        wx.navigateTo({
-            url: '../createMapContext/createMapContext'
-        })
-    },
-
     //位置服务
     locationServices: function (){
         wx.navigateTo({
@@ -259,11 +245,18 @@ Page({
         })
     },
 
-    //高德平台
-    gaode(){
+    //地图
+    mapIndex(){
         wx.navigateTo({
-            url: '../gaode/page/index/index'
+            url: '../map/index/index'
         })
     },
+
+    //日期时间选择器
+    datetimePicker(){
+        wx.navigateTo({
+            url: '../datetimePicker/datetimePicker'
+        })
+    }
 
 })

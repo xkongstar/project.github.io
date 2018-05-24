@@ -31,15 +31,11 @@
     <view>
       <button bindtap="toTemplateMessage">模板消息</button>
     </view>
+
     <view>
-      <button bindtap="toGetLocation">获取位置</button>
+      <button bindtap="mapIndex">地图</button>
     </view>
-    <view>
-      <button bindtap="openLocation">使用微信内置地图查看位置</button>
-    </view>
-    <view>
-      <button bindtap="createMapContext">地图组件控制</button>
-    </view>
+
     <view>
       <button bindtap="chooseAddress">选择地址</button>
     </view>
@@ -104,7 +100,7 @@
       <button bindtap="tocanvas">生成分享图</button>
     </view>
     <view>
-      <button bindtap="fortune">生成运势图</button>
+      <button bindtap="datetimePicker">日期时间选择器</button>
     </view>
   </view>
 
@@ -113,9 +109,6 @@
     <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">SDK</view>
     <view>
       <button bindtap="locationServices">位置服务</button>
-    </view>
-    <view>
-      <button bindtap="gaode">高德平台</button>
     </view>
   </view>
 </view>

@@ -1,6 +1,0 @@
-<!--pages/createMapContext/createMapContext.wxml-->
-<map id="myMap" show-location />
-<button bindtap="getCenterLocation" style="margin-top: 100rpx;">获取位置</button>
-<button bindtap="moveToLocation" style="margin-top: 40rpx;">移动位置</button>
-<button bindtap="translateMarker" style="margin-top: 40rpx;">移动标注</button>
-<button bindtap="includePoints" style="margin-top: 40rpx;">缩放视野展示所有经纬度</button>
