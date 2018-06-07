@@ -1,0 +1,9 @@
+navigator {
+    width: 300rpx;
+    margin: 40rpx auto;
+    text-align: center;
+    border-top: 1rpx solid #000;
+    border-bottom: 1rpx solid #000;
+    border-right: 1rpx solid #000;
+    border-left: 1rpx solid #000;
+}

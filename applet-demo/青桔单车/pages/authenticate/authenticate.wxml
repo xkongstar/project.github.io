@@ -1,0 +1,35 @@
+<view class="container" wx:if="{{!state.authComplete}}">
+    <view class="steps"></view>
+    <view class="auth-inputs">
+        <view class="auth-input">
+            <input bindblur="_dispatch" bindinput="_dispatch" data-bindblur="bindInput" data-bindinput="bindInput" id="name" placeholder="请输入真实姓名" placeholderStyle="font-size: 28rpx;color: #CCCCCC;letter-spacing: 0;" type="text" value="{{state.name}}"></input>
+        </view>
+        <view class="auth-input">
+            <input bindinput="_dispatch" data-bindinput="bindInput" id="id" maxlength="18" placeholder="请输入身份证号" placeholderStyle="font-size: 28rpx;color: #CCCCCC;letter-spacing: 0;" type="idcard" value="{{state.identity}}"></input>
+        </view>
+    </view>
+    <view bindtap="_dispatch" class="other-auth" data-bindtap="toHKAuth">
+    海外及港澳台人士认证
+    <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+    </view>
+    <view class="insurance">
+    {{state.insrInfo}}用车保险
+  </view>
+    <view bindtap="_dispatch" class="mf-btn {{state.nextMove||'disable'}} bottom" data-bindtap="nextMove">下一步</view>
+</view>
+<view class="container" wx:if="{{state.authComplete}}">
+    <view class="steps"></view>
+    <view class="auth-suc">
+        <image src="../../common/image/htw_icon_Success@2x.png"></image>
+        <text>恭喜您，认证完成</text>
+        <text>您可以立即用车</text>
+    </view>
+    <view class="contract">
+        <image bindtap="_dispatch" data-bindtap="changeAgree" src="../../common/image/btn_pay_select@2x.png" wx:if="{{state.agree}}"></image>
+        <image bindtap="_dispatch" data-bindtap="changeAgree" src="../../common/image/btn_pay_unselected@2x.png" wx:if="{{!state.agree}}"></image>
+        <text>我已知晓，并同意</text>
+        <text bindtap="_dispatch" class="orange" data-bindtap="userProtocol">《用户服务协议》</text>
+    </view>
+    <view bindtap="_dispatch" class="mf-btn bottom" data-bindtap="goHome" wx:if="{{state.agree}}">立即用车</view>
+    <view class="mf-btn disable bottom" wx:if="{{!state.agree}}">立即用车</view>
+</view>

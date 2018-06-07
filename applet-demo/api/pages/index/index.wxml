@@ -68,6 +68,15 @@
       <button bindtap="openData">展示微信开放的数据</button>
     </view>
 
+    <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">媒体</view>
+    <view>
+      <button bindtap="audio">音频</button>
+    </view>
+    <view>
+      <button bindtap="video">视频</button>
+    </view>
+
+
   </view>
 
   <!-- 下面的需要后台配合 -->
@@ -101,6 +110,14 @@
     </view>
     <view>
       <button bindtap="datetimePicker">日期时间选择器</button>
+    </view>
+  </view>
+
+  <!-- 插件 -->
+  <view>
+    <view style="margin-top: 80rpx;text-align: center;color: #2F83DB;font-size: 46rpx;font-weight: bolder;">插件</view>
+    <view>
+      <button bindtap="WechatSI">微信同声传译</button>
     </view>
   </view>
 

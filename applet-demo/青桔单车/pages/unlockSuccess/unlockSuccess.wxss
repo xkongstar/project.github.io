@@ -1,0 +1,246 @@
+page {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.timeCircle {
+    position: relative;
+    padding: 20px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.timeCircle .btn {
+    height: 50px;
+    display: block;
+    margin: 0;
+    padding: 17px 16px;
+    width: 100%;
+    line-height: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    white-space: nowrap;
+    outline: 0;
+    font-size: 16px;
+    color: #fff;
+    background: #4a4c5b;
+    border: none;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+
+.c-orange {
+    color: #fc9153;
+}
+
+.icon_right {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.orange-num-s {
+    margin: 0 3rpx;
+    font-size: 32rpx;
+}
+
+.orange-num-b {
+    margin-right: 5rpx;
+    font-size: 50rpx;
+}
+
+.states {
+    display: flex;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+}
+
+.states-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60rpx 0;
+    color: #fff;
+    background: #fff;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.states-header .state-icon {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.ride-header-desc-top {
+    text-align: center;
+    color: #333;
+    font-size: 32rpx;
+}
+
+.ride-header-desc-btm {
+    text-align: center;
+    margin-top: 20rpx;
+    font-size: 20rpx;
+    color: #999;
+}
+
+.state-desc {
+    margin-top: 26rpx;
+    color: #666;
+    font-size: 28rpx;
+}
+
+.state-notice {
+    color: #666;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25rpx 0;
+}
+
+.state-notice .radio-icon-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.state-notice .radio-icon {
+    height: 68rpx;
+    width: 68rpx;
+}
+
+.state-notice .notice-intro {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+    padding-right: 52rpx;
+}
+
+.ride-state-l {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ride-state-r {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-left: 1rpx solid #ebebeb;
+}
+
+.map-wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.map-wrap view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#map {
+    display: block;
+    flex: 1;
+    height: 150rpx;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100rpx;
+    border-radius: 0;
+    color: #666;
+}
+
+.footer-btn>view {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0;
+}
+
+.footer-btn>view text {
+    font-size: 24rpx;
+}
+
+.footer-btn>view.on {
+    background: #eee;
+}
+
+.footer-btn>view:first-child {
+    border-right: 1rpx solid #ebebeb;
+}
+
+.footer-btn .repair-icon {
+    width: 29.6rpx;
+    height: 29.6rpx;
+    margin-right: 5rpx;
+}
+
+.footer-btn .change-icon {
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 5rpx;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.unlock-loading-img {
+    width: 100rpx;
+    height: 100rpx;
+    animation: loading 2s infinite linear;
+}
+
+.reset-icon {
+    position: absolute;
+    width: 70rpx;
+    height: 70rpx;
+    right: 30rpx;
+    bottom: 30rpx;
+}
+
+.shadow_btm {
+    position: absolute;
+    bottom: 0rpx;
+    right: 0rpx;
+    width: 100%;
+    height: 12rpx;
+}
+
+.shadow_top {
+    position: absolute;
+    top: 0rpx;
+    right: 0rpx;
+    width: 100%;
+    height: 12rpx;
+}

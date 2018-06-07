@@ -1,0 +1,43 @@
+<view class="home">
+    <view class="map-wrapper">
+        <map bindregionchange="_dispatch" data-bindregionchange="regionchange" id="map" latitude="{{state.latitude}}" longitude="{{state.longitude}}" markers="{{state.markers}}" scale="{{state.scale||state.scaleFlag}}" showLocation="true" style="height: auto;width:100%">
+            <cover-image class="center_icon" src="../../common/image/point_in_map.png"></cover-image>
+            <cover-image class="shadow_btm" src="../../common/image/map-shadow-btm.png"></cover-image>
+            <cover-image class="shadow_top" src="../../common/image/map-shadow-top.png"></cover-image>
+            <cover-view class="map_state_icon">{{state.mapTips}}</cover-view>
+        </map>
+    </view>
+    <cover-image bindtap="_dispatch" class="msg-icon" data-bindtap="goMsgCenter" src="../../common/image/icon_msg@2x.png"></cover-image>
+    <cover-view class="msg-icon-red" xmlns:wx="" wx:if="{{state.redTip}}"></cover-view>
+    <cover-image bindtap="_dispatch" class="user-icon" data-bindtap="goUserCenter" src="../../common/image/icon_user@2x.png"></cover-image>
+    <cover-image bindtap="_dispatch" class="reset-icon" data-bindtap="goMapReset" src="../../common/image/reset.png"></cover-image>
+    <cover-view bindtap="_dispatch" class="top-tips" data-bindtap="clickHandle({{state.homeMessageUrl}})">
+        <cover-view wx:if="{{state.homeMessage}}">{{state.homeMessage}}</cover-view>
+        <cover-image class="top-icon-r" src="../../common/image/common_icon_right@2x.png" wx:if="{{state.homeMessageUrl}}"></cover-image>
+        <cover-image class="top-icon" src="../../common/image/top_tips_icn@2x.png" wx:if="{{!state.homeMessage}}"></cover-image>
+        <cover-view wx:if="{{!state.homeMessage}}">
+      青桔单车、小蓝单车扫码任意行
+    </cover-view>
+    </cover-view>
+    <cover-view class="mapMsgBox" wx:if="{{msgBox.state.show}}">
+        <cover-image bindtap="_dispatch" class="banner" data-bindtap="clickHandle" data-path="msgBox" src="{{msgBox.state.imgUrl}}"></cover-image>
+        <cover-image bindtap="_dispatch" class="close-btn" data-bindtap="close" data-path="msgBox" src="../../common/image/icon_close@2x.png"></cover-image>
+    </cover-view>
+    <cover-view class="mapAuthBox" wx:if="{{authBox.state.show}}">
+        <cover-view class="AuthBox">
+            <cover-view class="mapAuthBox-t">
+                <cover-image class="state-icon" src="{{authBox.state.statusDetail.icon}}"></cover-image>
+                <cover-view class="state-title">{{authBox.state.statusDetail.title}}</cover-view>
+                <cover-view class="state-desc">{{authBox.state.statusDetail.desc}}</cover-view>
+                <cover-view class="user-protocol" wx:if="{{authBox.state.status==='success'}}">
+                    <cover-image bindtap="_dispatch" data-bindtap="userProtocol" data-path="authBox" src="{{authBox.state.agreeIcon}}"></cover-image>
+        我已知晓，并同意《用户服务协议》            
+      </cover-view>
+            </cover-view>
+            <cover-view bindtap="_dispatch" class="mapAuthBox-btn" data-bindtap="authClickHandle" data-path="authBox" style="{{!authBox.state.agree&&authBox.state.status==='success'?'color:#CCC':''}}">{{authBox.state.statusDetail.btn}}</cover-view>
+        </cover-view>
+    </cover-view>
+    <view class="ride-btn">
+        <view bindtap="_dispatch" class="scan" data-bindtap="scan">扫码解锁</view>
+    </view>
+</view>

@@ -1,0 +1,265 @@
+.mf-btn {
+    display: block;
+    margin: 0;
+    padding: 17px 16px;
+    width: 100%;
+    line-height: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    white-space: nowrap;
+    outline: 0;
+    font-size: 16px;
+    color: #fff;
+    background: #4a4c5b;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mf-btn .mfic {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 4px;
+    transform: scale(1.13);
+    transform-origin: right center;
+}
+
+.mf-btn.active,.mf-btn:active {
+    background: #444654;
+}
+
+.mf-btn.disable,.mf-btn:disabled {
+    background: #ccc;
+}
+
+.mf-btn.inline {
+    width: auto;
+    display: inline-block;
+    padding: 9px 10px;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.mf-btn.inline .mfic {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 2px;
+    transform: scale(1.14);
+    transform-origin: right center;
+}
+
+.mf-btn.orange {
+    background: #fc9153;
+}
+
+.mf-btn.orange.active,.mf-btn.orange:active {
+    background: #e8864c;
+}
+
+.mf-btn.orange.disable,.mf-btn.orange:disabled {
+    background: #ccc;
+}
+
+.mf-btn.white {
+    color: #666;
+    background: #fcfcfc;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+}
+
+.mf-btn.white.active,.mf-btn.white:active {
+    background: #e8e8e8;
+}
+
+.mf-btn.white.disable,.mf-btn.white:disabled {
+    color: #fff;
+    background: #ccc;
+}
+
+.mf-btn.orange-border {
+    color: #fc9153;
+    background: 0 0;
+}
+
+.mf-btn.orange-border.active,.mf-btn.orange-border:active {
+    background: rgba(252,145,83,.08);
+}
+
+.mf-btn.orange-border.disable,.mf-btn.orange-border:disabled {
+    color: #ccc;
+    background: 0 0;
+}
+
+.mf-btn.grew-border {
+    font-size: 12px;
+    color: #666;
+    background: 0 0;
+}
+
+.mf-btn.grew-border.active,.mf-btn.grew-border:active {
+    background: rgba(0,0,0,.08);
+}
+
+.mf-btn.grew-border.disable,.mf-btn.grew-border:disabled {
+    color: #ccc;
+    background: 0 0;
+}
+
+page {
+    background: #fff;
+}
+
+page .pay {
+    margin: 80rpx 110rpx auto 110rpx;
+}
+
+.pay text {
+    width: auto;
+}
+
+.disperse {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rpx 28rpx 10rpx;
+}
+
+.couponDiscount,.totalFee {
+    font-size: 28rpx;
+    color: #666;
+}
+
+.couponDiscountDetail {
+    display: block;
+    font-size: 0;
+    position: absolute;
+    width: 24rpx;
+    height: 24rpx;
+    top: 154.9rpx;
+    left: 636.5rpx;
+    background-size: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.orange {
+    color: #fc9153;
+}
+
+.line {
+    height: 2rpx;
+    width: 530rpx;
+    background: rgba(0,0,0,.08);
+    margin: 48rpx auto;
+}
+
+.paymentInfo {
+    display: flex;
+    align-items: center;
+}
+
+.paymentTypeWrap {
+    display: flex;
+    align-items: baseline;
+}
+
+.paymentInfo text {
+    height: 24rpx;
+    line-height: 24rpx;
+    font-size: 22rpx;
+    color: #999;
+    letter-spacing: 0;
+}
+
+.paymentIcon {
+    display: block;
+    font-size: 0;
+    background-size: 100%;
+    width: 28rpx;
+    height: 28rpx;
+}
+
+text.paymentType {
+    font-size: 28rpx;
+    color: #666;
+    padding: 0 12rpx;
+}
+
+.amount {
+    align-items: baseline;
+}
+
+.amount text {
+    font-size: 28rpx;
+    color: #333;
+    letter-spacing: 0;
+}
+
+.amount text:nth-child(2) {
+    font-size: 80rpx;
+    margin: 0 9rpx 0 12rpx;
+}
+
+.detail {
+    margin: -8rpx auto 0 auto;
+    padding: 12rpx auto;
+    align-items: center;
+}
+
+.center.detail text {
+    font-size: 28rpx;
+    color: #666;
+}
+
+.detail image {
+    display: block;
+    font-size: 0;
+    width: 24rpx;
+    height: 24rpx;
+    background-size: 100%;
+}
+
+.mf-btn {
+    background: #4a4c5b;
+    border-radius: 4rpx;
+    font-size: 36rpx;
+    letter-spacing: 0;
+    margin: 80rpx auto auto auto;
+}
+
+.sub_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4a4c5b;
+    height: 94rpx;
+    width: 530rpx;
+    margin-top: 80rpx;
+    border-radius: 4rpx;
+    color: #fff;
+    font-size: 36rpx;
+}
+
+.ad-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90rpx;
+}
+
+.ad-block image {
+    width: 710rpx;
+    height: 160rpx;
+}
+
+.ad-block .share-btn {
+    position: absolute;
+    width: 710rpx;
+    height: 160rpx;
+    opacity: 0;
+}

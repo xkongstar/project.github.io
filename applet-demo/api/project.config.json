@@ -8,8 +8,8 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.0",
-	"appid": "wxbcd7bffbad14d7e1",
+	"libVersion": "2.0.9",
+	"appid": "wx2c6108f604a2da4c",
 	"projectname": "api",
 	"isGameTourist": false,
 	"condition": {

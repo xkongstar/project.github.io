@@ -1,0 +1,37 @@
+{
+    "pages": [
+        "pages/init/init",
+        "pages/router/router",
+        "pages/authenticate/authenticate",
+        "pages/pay/pay",
+        "pages/didiAuth/didiAuth",
+        "pages/ridingCard/ridingCard",
+        "pages/protocolDetail/protocolDetail",
+        "pages/blank/blank",
+        "pages/myCoupon/myCoupon",
+        "pages/myRecord/myRecord",
+        "pages/messageCenter/messageCenter",
+        "pages/userCenter/userCenter",
+        "pages/unlockTest/unlock",
+        "pages/bluetooth/bluetooth",
+        "pages/broken/broken",
+        "pages/tripEnded/tripEnded",
+        "pages/unlocking/unlocking",
+        "pages/unlockFail/unlockFail",
+        "pages/unlockPre/unlockPre",
+        "pages/unlockSuccess/unlockSuccess",
+        "npm/@didi/teddy-login/pages/captcha/captcha",
+        "npm/@didi/teddy-login/pages/login-phone/login-phone",
+        "npm/@didi/teddy-login/pages/password/password",
+        "npm/@didi/teddy-login/pages/pwd-login/pwd-login",
+        "npm/@didi/teddy-login/pages/sms-login/sms-login"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "青桔单车",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f3f3f3",
+        "enablePullDownRefresh": false
+    }
+}

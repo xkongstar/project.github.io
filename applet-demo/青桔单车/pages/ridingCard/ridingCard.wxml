@@ -1,0 +1,13 @@
+<view class="ridingCard">
+    <view bindtap="_dispatch" class="rules" data-bindtap="clickHandle">
+        <image src="../../common/image/htw_icon_i@2x.png"></image>使用规则
+  </view>
+    <view class="card-item" style="{{'background:url('+item.validLogoUrl+');background-size:100% 100%'}}" xmlns:wx="" wx:for="{{state.items}}" wx:key="index">
+        <view class="card-item-t">
+            <view>单车月卡</view>
+            <view>{{item.remainDay}}天</view>
+        </view>
+        <view class="card-item-b" wx:if="{{item.remainDay>0}}">{{item.cardDescribe['zh-CN']}}</view>
+        <view bindtap="_dispatch" class="getDetail" data-bindtap="getDetail" data-item="{{item}}" wx:if="{{item.remainDay>0}}">查看</view>
+    </view>
+</view>

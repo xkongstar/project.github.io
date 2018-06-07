@@ -1,0 +1,27 @@
+<view class="pay">
+    <view class="disperse totalFee">
+        <text>本次行程总计</text>
+        <text>{{state.total_fee}} 元</text>
+    </view>
+    <view class="disperse couponDiscount orange">
+        <text>{{state.pay_detail.channel}}</text>
+        <text>{{state.pay_detail.fee}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="paymentInfo">
+        <image class="paymentIcon" src="http://static.didialift.com//didialift//hybrid//images//icons//pay_icon_wechat@3x.png"></image>
+        <view class="paymentTypeWrap">
+            <text class="paymentType">微信支付</text>
+        </view>
+    </view>
+    <view class="line"></view>
+    <view class="center amount">
+        <text>共</text>
+        <text>{{state.total_fee}}</text>
+        <text>元</text>
+    </view>
+    <view bindtap="_dispatch" class="center detail" data-bindtap="checkDetail">
+        <text>全部费用详情</text>
+        <image src="../../common/image/common_icon_right@2x.png"></image>
+    </view>
+</view>

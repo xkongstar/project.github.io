@@ -1,0 +1,42 @@
+<view class="didiAuth">
+    <view class="container" xmlns:wx="" wx:if="{{state.authState===1||state.authState===2}}">
+        <view class="auth-suc">
+            <image src="../../common/image/htw_icon_Success@2x.png"></image>
+            <text class="authState_1">{{state.authState===1?'认证完成，请规范用车':'恭喜您，认证完成'}}</text>
+            <text class="authState_2">滴滴信用分值：{{state.authState===1?'较好':'极好'}}</text>
+        </view>
+        <view class="contract">
+            <image bindtap="_dispatch" data-bindtap="changeAgree" src="../../common/image/btn_pay_select@2x.png" wx:if="{{state.agree}}"></image>
+            <image bindtap="_dispatch" data-bindtap="changeAgree" src="../../common/image/btn_pay_unselected@2x.png" wx:if="{{!state.agree}}"></image>
+            <text>我已知晓，并同意</text>
+            <text bindtap="_dispatch" class="orange" data-bindtap="userProtocol">《用户服务协议》</text>
+        </view>
+        <view bindtap="_dispatch" class="mf-btn bottom" data-bindtap="goHome" wx:if="{{state.agree}}">立即用车</view>
+        <view class="mf-btn disable bottom" wx:if="{{!state.agree}}">立即用车</view>
+    </view>
+    <view class="container" wx:if="{{state.authState===0}}">
+        <view class="auth-suc">
+            <image src="../../common/image/dialog_icon_exclam@3x.png"></image>
+            <text class="authState_1">认证完成失败</text>
+            <text class="authState_2">服务认证未通过，不能提供用车服务</text>
+        </view>
+        <view bindtap="_dispatch" class="mf-btn bottom" data-bindtap="goHome">我知道了</view>
+    </view>
+    <view class="container" wx:if="{{state.authState===9}}">
+        <view class="auth-suc">
+            <image src="../../common/image/htw_icon_Success@2x.png"></image>
+            <text class="authState_1">信息已提交</text>
+            <text class="authState_2">您的个人信息将于3小时内审核完成，审核完毕后方可用车。</text>
+        </view>
+        <view bindtap="_dispatch" class="mf-btn bottom" data-bindtap="goHome">我知道了</view>
+    </view>
+    <view class="container" wx:if="{{state.authState===10}}">
+        <view class="auth-suc">
+            <image src="../../common/image/dialog_icon_exclam@3x.png"></image>
+            <text class="authState_1">信息提交失败</text>
+            <text class="authState_2">请填写正确信息后再提交</text>
+        </view>
+        <view bindtap="_dispatch" class="mf-btn bottom" data-bindtap="goAuth">重新填写</view>
+        <view bindtap="_dispatch" class="mf-btn  white" data-bindtap="goHome">返回首页</view>
+    </view>
+</view>

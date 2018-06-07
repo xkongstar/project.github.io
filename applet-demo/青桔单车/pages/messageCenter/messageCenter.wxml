@@ -1,0 +1,14 @@
+<view class="msgCenter">
+    <view bindtap="_dispatch" class="msgCenter-item" data-bindtap="clickHandle({{item.linkUrl}})" xmlns:wx="" wx:for="{{state.messageList}}" wx:key="index">
+        <view class="msgCenter-item-title">
+      {{item.title}}
+    </view>
+        <view class="msgCenter-item-img">
+            <image src="{{item.imgUrl}}"></image>
+        </view>
+    </view>
+    <view class="none_msg_wrap" wx:if="{{(!state.messageList||state.messageList.length==0)&&state.isNone}}">
+        <image class="icon_none_msg" src="../../common/image/icon_none_msg@2x.png"></image>
+        <view class="none_msg_text">暂无消息</view>
+    </view>
+</view>

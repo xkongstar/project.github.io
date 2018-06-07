@@ -1,0 +1,10 @@
+<view class="bluetooth">
+    <image src="../../common/image/image@2x.png" xmlns:wx="" wx:if="{{state.isIOS}}"></image>
+    <image src="../../common/image/android_image@2x.png" wx:if="{{!state.isIOS}}"></image>
+    <text>开启蓝牙</text>
+    <text>车辆开启需要连接手机蓝牙</text>
+    <view bindtap="_dispatch" class="mf-btn {{button.state.classes}}" data-bindtap="handleClick" data-path="button">
+        <view class="{{button.state.icon}}"></view>
+  {{button.props.text}}
+</view>
+</view>

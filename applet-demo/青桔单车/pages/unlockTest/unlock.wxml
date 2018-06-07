@@ -1,0 +1,31 @@
+<view class="content">
+    <text class="status">适配器状态：{{state.status}}</text>
+    <text class="sousuo">是否搜索：{{state.sousuo}}</text>
+    <text class="msg">消息：{{state.msg}} </text>
+    <text class="msg1">消息：{{state.msg1}}</text>
+    <button bindtap="_dispatch" class="button" data-bindtap="initBluetooth" type="primary">1初始化蓝牙适配器</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="localBluetoothState" type="primary">2本机蓝牙适配状态</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="discoveryDevices" type="primary">3搜索周边设备</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="getDevices" type="primary">4获取设备后在列表中连接</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="stopDiscovery" type="primary">5停止搜索周边设备</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="getConnectedDeviceService" type="primary">6获取连接设备所有service</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="getCharacteristics" type="primary">7获取连接设备所有特征值</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="sendMessage" type="primary">8发送指定消息</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="startNotify" type="primary">9启用设备特征值变化时的notify</button>
+    <button bindtap="_dispatch" class="button" data-bindtap="receiveMessage" type="primary">10接收消息</button>
+    <view class="section">
+        <text class="status">接收到消息：{{state.jieshou}}</text>
+    </view>
+    <button bindtap="_dispatch" class="button" data-bindtap="closeBLEConnection" type="primary">0断开蓝牙连接</button>
+</view>
+<view class="venues_list">
+    <view class="venues_item" wx:for="{{state.devices}}" wx:key="{{state.test}}">
+        <text class="status">设备名称:{{item.name}}</text>
+        <text class="status">设备ID:{{item.deviceId}}</text>
+        <text class="status">连接状态:{{state.connectedDeviceId==item.deviceId?'已连接':'未连接'}}</text>
+        <view class="section"></view>
+        <view class="section">
+            <button bindtap="_dispatch" class="button" data-bindtap="connectDevice" id="{{item.deviceId}}" type="warn">连接</button>
+        </view>
+    </view>
+</view>

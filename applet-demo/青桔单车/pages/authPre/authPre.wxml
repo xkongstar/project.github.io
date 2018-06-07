@@ -1,0 +1,6 @@
+<view>
+    <image class="auth-pic" src="../../common/image/auth.jpg"></image>
+    <button bindgetrealnameauthinfo="_dispatch" categoryId="{{state.categoryId}}" class="button" data-bindgetrealnameauthinfo="authinfo" openType="getRealnameAuthInfo">微信用户快速认证
+  </button>
+    <view bindtap="_dispatch" class="click" data-bindtap="target">点击通过服务认证登录用车</view>
+</view>

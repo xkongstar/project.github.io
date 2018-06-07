@@ -1,0 +1,1 @@
+<web-view bindmessage="_dispatch" class="webView" data-bindmessage="msgHandle" src="{{state.url}}"></web-view>

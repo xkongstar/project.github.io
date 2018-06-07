@@ -1,0 +1,62 @@
+<view class="myRecords">
+    <view class="record-not-finished" xmlns:wx="" wx:if="{{state.order_waiting.length>0}}">
+        <view class="text-or finish-intro">未完成订单</view>
+        <view class="record-item" wx:for="{{state.order_waiting}}" wx:key="index">
+            <view bindtap="_dispatch" class="record-item-t" data-bindtap="jumpToState" data-orderid="{{item.order}}">
+                <view>
+          {{item.product_name}}
+          </view>
+                <view class="text-or">
+          {{item.hisstatus}}
+          <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+                </view>
+            </view>
+            <view class="record-det">
+                <view>
+                    <image class="circle" src="../../common/image/icon_history@2x.png"></image>
+          {{item.setuptime}}
+        </view>
+                <view>
+                    <view class="circle blue"></view>
+          {{item.fromAddress}}
+        </view>
+                <view wx:if="{{item.toAddress}}">
+                    <view class="circle or-color"></view>
+          {{item.toAddress}}
+        </view>
+            </view>
+        </view>
+    </view>
+    <view class="record-finished" wx:if="{{state.order_done.length>0}}">
+        <view class="text-gr finish-intro">已完成订单</view>
+        <view bindtap="_dispatch" class="record-item" data-bindtap="jumpToTripEnded" data-orderid="{{item.order}}" wx:for="{{state.order_done}}" wx:key="index">
+            <view class="record-item-t">
+                <view>
+            {{item.product_name}}
+            </view>
+                <view class="text-gr">
+            已完成
+            <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+                </view>
+            </view>
+            <view class="record-det">
+                <view>
+                    <image class="circle" src="../../common/image/icon_history@2x.png"></image>
+            {{item.setuptime}}
+          </view>
+                <view>
+                    <view class="circle blue"></view>
+            {{item.fromAddress}}
+          </view>
+                <view wx:if="{{item.toAddress}}">
+                    <view class="circle or-color"></view>
+            {{item.toAddress}}
+          </view>
+            </view>
+        </view>
+    </view>
+    <view class="no_coupon_wrap" wx:if="{{state.order_waiting.length===0&&state.order_done.length===0&&state.isNone}}">
+        <image class="no_coupon" src="../../common/image/no_record.png"></image>
+        <view class="no_coupon_text">近期暂无行程</view>
+    </view>
+</view>

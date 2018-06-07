@@ -1,0 +1,53 @@
+<view class="userCenter">
+    <view class="userInfo">
+        <image class="userInfo-head" src="{{state.userInfo.avatarUrl||'../../common/image/head_icon.png'}}"></image>
+        <view class="userInfo-name">
+      {{state.userInfo.nickName}}
+    </view>
+        <view class="userInfo-phone">
+      {{state.phone}}
+    </view>
+    </view>
+    <view class="userInfo-list">
+        <navigator class="userInfo-list-item route" url="../myRecord/myRecord">
+            <image class="icon_type" src="../../common/image/icon_stroke@2x.png"></image>
+            <view class="red-tips" xmlns:wx="" wx:if="{{state.waitNum>0}}"></view>
+            <view class="userInfo-list-item-r">
+                <view class="userInfo-list-item-rt">行程</view>
+                <view class="userInfo-list-item-rb">最近三个月骑行<text class="orColor">{{state.recordsNum}}</text>次
+        </view>
+            </view>
+            <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+        </navigator>
+        <navigator class="userInfo-list-item route" url="../myCoupon/myCoupon">
+            <image class="icon_type" src="../../common/image/icon_coupon@2x.png"></image>
+            <view class="userInfo-list-item-r">
+                <view class="userInfo-list-item-rt">优惠券</view>
+                <view class="userInfo-list-item-rb">展示您拥有的优惠券</view>
+            </view>
+            <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+        </navigator>
+        <view bindtap="_dispatch" class="userInfo-list-item route" data-bindtap="targetTo('../ridingCard/ridingCard')">
+            <image class="icon_type" src="../../common/image/icon_ridingCard@2x.png"></image>
+            <view class="red-tips" wx:if="{{state.cardRed}}"></view>
+            <view class="userInfo-list-item-r">
+                <view class="userInfo-list-item-rt">单车月卡</view>
+                <view class="userInfo-list-item-rb">
+                    <text class="orColor">{{state.remainDay}}</text>天可用单车月卡
+        </view>
+            </view>
+            <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+        </view>
+        <view bindtap="_dispatch" class="userInfo-list-item route" data-bindtap="goProtocol">
+            <image class="icon_type" src="../../common/image/icon_law_intro@2x.png"></image>
+            <view class="userInfo-list-item-r">
+                <view class="userInfo-list-item-rt">法律条款及隐私政策</view>
+                <view class="userInfo-list-item-rb">青桔单车服务协议、小蓝单车服务协议、共享单车平台服务协议</view>
+            </view>
+            <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+        </view>
+    </view>
+    <view bindtap="_dispatch" class="layout_btn" data-bindtap="logoutHandle">退出登录</view>
+    <view bindtap="_dispatch" class="fix-bottom" data-bindtap="callPhone">客服电话：4006656666</view>
+    <view class="fix-bottom2">官方微信服务号：青桔单车服务号</view>
+</view>

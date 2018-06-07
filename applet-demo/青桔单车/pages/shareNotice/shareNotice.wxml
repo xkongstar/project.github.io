@@ -1,0 +1,6 @@
+<view class="layer-wrap">
+    <form bindsubmit="_dispatch" data-bindsubmit="goH5" reportSubmit="true">
+        <button class="sub_btn" formType="submit"></button>
+        <image class="layer-ing" src="https://pt-starimg.didistatic.com/static/starimg/img/1527496868357KCODMTVFljozMPVhhPg.png"></image>
+    </form>
+</view>

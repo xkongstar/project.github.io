@@ -1,0 +1,53 @@
+<view class="page basic states">
+    <view class="states-header">
+        <block wx:if="{{state.success===false}}">
+            <view class="ride-header-desc-top">请将车辆停至共享单车停车区</view>
+            <view class="ride-header-desc-btm">已为您本次出行购买了用车保险
+      </view>
+        </block>
+        <block wx:if="{{state.success}}">
+            <view>
+                <image class="state-icon" src="../../common/image/htw_icon_Success@2x.png"></image>
+            </view>
+            <text class="state-desc">开锁成功</text>
+        </block>
+    </view>
+    <view class="state-notice" wx:if="{{props.locationInfo.unlockScdOperMsg&&state.success}}">
+        <view class="radio-icon-wrap">
+            <image class="radio-icon" src="../../common/image/message_icon_speaker@2x.png"></image>
+        </view>
+        <view class="notice-intro">
+        {{props.locationInfo.unlockScdOperMsg}}
+      </view>
+    </view>
+    <view class="state-notice" wx:if="{{state.success===false}}">
+        <view class="ride-state-l">
+            <view wx:if="{{state.ridingInfo.distance<100}}">
+          骑行<text class="c-orange orange-num-s">{{state.ridingInfo.distance}}</text>公里
+        </view>
+            <view>骑行时间<text class="c-orange orange-num-s">{{state.ridingInfo.ridingTime}}</text>分钟
+        </view>
+        </view>
+        <view bindtap="_dispatch" class="ride-state-r" data-bindtap="toRules">
+            <text class="c-orange orange-num-b">{{state.ridingInfo.cost}}</text>元
+        <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+        </view>
+    </view>
+    <view class="map-wrap">
+        <map id="map" latitude="{{props.locationInfo.latitude}}" longitude="{{props.locationInfo.longitude}}" markers="{{state.markers}}" scale="16" showLocation="show-location" style="flex:1;width:100%">
+            <cover-image bindtap="_dispatch" class="reset-icon" data-bindtap="goMapReset" src="../../common/image/reset.png"></cover-image>
+            <cover-image class="shadow_btm" src="../../common/image/map-shadow-btm.png"></cover-image>
+            <cover-image class="shadow_top" src="../../common/image/map-shadow-top.png"></cover-image>
+        </map>
+    </view>
+    <view class="footer-btn">
+        <view bindtap="_dispatch" data-bindtap="repair" hoverClass="on">
+            <image class="repair-icon" src="../../common/image/htw_icon_repair@2x.png"></image>
+            <text>车辆报修</text>
+        </view>
+        <view bindtap="_dispatch" data-bindtap="doCloseLock" hoverClass="on" wx:if="{{state.success===false}}">
+            <image class="change-icon" src="../../common/image/htw_icon_i@2x.png"></image>
+            <text>手动结束行程</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+<view class="myCoupon">
+    <view bindtap="_dispatch" class="rules" data-bindtap="clickHandle">
+        <image src="../../common/image/htw_icon_i@2x.png"></image>使用规则
+  </view>
+    <view class="no_coupon_wrap" xmlns:wx="" wx:if="{{state.coupons.length===0&&state.isNone}}">
+        <image class="no_coupon" src="../../common/image/no_coupon.png"></image>
+        <view class="no_coupon_text">暂无可用优惠</view>
+    </view>
+    <view class="coupon-item" wx:for="{{state.coupons}}" wx:key="index">
+        <view class="coupon-item-t">
+            <view class="coupon-item-tl">
+                <view>{{item.name}}</view>
+                <view>
+          有效期至{{item.expired_time}}
+        </view>
+            </view>
+            <view class="coupon-item-tr">
+                <view class="coupon_num" wx:if="{{item.total_count!=0&&item.free_count!=0}}">
+          {{item.free_count}}次
+        </view>
+                <view class="yuan">￥</view>
+                <view class="font-big">{{item.coupon_amount/100}}</view>
+            </view>
+        </view>
+        <view class="coupon-item-b">
+      {{item.remark}}
+    </view>
+    </view>
+</view>

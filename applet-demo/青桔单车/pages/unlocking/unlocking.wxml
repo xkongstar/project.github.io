@@ -1,0 +1,29 @@
+<view class="page basic states">
+    <view class="states-header">
+        <view>
+            <image class="unlock-loading-img" src="../../common/image/unlock_loading.png"></image>
+        </view>
+        <text class="state-desc">开锁中</text>
+    </view>
+    <view class="state-notice" xmlns:wx="" wx:if="{{props.locationInfo.unlockingOperMsg}}">
+        <view class="radio-icon-wrap">
+            <image class="radio-icon" src="../../common/image/message_icon_speaker@2x.png"></image>
+        </view>
+        <view class="notice-intro">
+        {{props.locationInfo.unlockingOperMsg}}
+      </view>
+    </view>
+    <view class="map-wrap">
+        <map id="map" latitude="{{props.locationInfo.latitude}}" longitude="{{props.locationInfo.longitude}}" markers="{{state.markers}}" scale="16" showLocation="show-location" style="flex:1;width:100%">
+            <cover-image bindtap="_dispatch" class="reset-icon" data-bindtap="goMapReset" src="../../common/image/reset.png"></cover-image>
+            <cover-image class="shadow_btm" src="../../common/image/map-shadow-btm.png"></cover-image>
+            <cover-image class="shadow_top" src="../../common/image/map-shadow-top.png"></cover-image>
+        </map>
+    </view>
+    <view class="footer-btn">
+        <view bindtap="_dispatch" data-bindtap="repair" hoverClass="on">
+            <image class="repair-icon" src="../../common/image/htw_icon_repair@2x.png"></image>
+            <text>车辆报修</text>
+        </view>
+    </view>
+</view>

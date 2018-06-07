@@ -1,0 +1,3 @@
+<view class="unlockPre">
+    <image class="loader" src="../../common/image/25.gif"></image>
+</view>

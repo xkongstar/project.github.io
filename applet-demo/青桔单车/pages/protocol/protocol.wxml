@@ -1,0 +1,14 @@
+<view class="protocol">
+    <navigator url="../protocolDetail/protocolDetail?type=qingju&readOnly=true">
+        <view>青桔单车租赁服务协议</view>
+        <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+    </navigator>
+    <navigator url="../protocolDetail/protocolDetail?type=bluegogo&readOnly=true">
+        <view>小蓝单车租赁服务协议</view>
+        <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+    </navigator>
+    <navigator url="../protocolDetail/protocolDetail?type=all&readOnly=true">
+        <view>共享单车平台服务协议</view>
+        <image class="icon_right" src="../../common/image/common_icon_right@2x.png"></image>
+    </navigator>
+</view>

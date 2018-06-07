@@ -1,0 +1,30 @@
+page {
+    background: #fff;
+}
+
+.auth-pic {
+    height: 650rpx;
+    width: 100%;
+}
+
+.click {
+    font-size: 28rpx;
+    color: #4a4c5b;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    background: #14d0b4;
+    border-radius: 5rpx;
+    width: 630rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    color: #fff;
+    letter-spacing: 0;
+    border: 0;
+    margin: 200rpx auto 20rpx auto;
+}

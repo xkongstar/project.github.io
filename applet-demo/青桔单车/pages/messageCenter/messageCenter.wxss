@@ -1,0 +1,45 @@
+.msgCenter-item {
+    color: #666;
+    font-size: 24rpx;
+    border-radius: 5rpx;
+    background: #fff;
+    width: 710rpx;
+    margin: 20rpx auto 0;
+    overflow: hidden;
+}
+
+.msgCenter-item .msgCenter-item-title {
+    display: flex;
+    align-items: center;
+    height: 81rpx;
+    padding-left: 32rpx;
+}
+
+.msgCenter-item .msgCenter-item-img {
+    height: 200rpx;
+}
+
+.msgCenter-item image {
+    height: 200rpx;
+    width: 710rpx;
+}
+
+.none_msg_wrap {
+    margin-top: 384rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icon_none_msg {
+    width: 88rpx;
+    height: 88rpx;
+}
+
+.none_msg_text {
+    color: #666;
+    font-size: 28rpx;
+    margin-top: 25rpx;
+}

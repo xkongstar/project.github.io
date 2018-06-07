@@ -1,0 +1,38 @@
+<view class="pay">
+    <view class="disperse totalFee">
+        <text>本次行程总计</text>
+        <text>{{state.bill_basic.total_fee/100}}{{state.bill_basic.currency_symbol}}</text>
+    </view>
+    <view class="disperse couponDiscount orange" xmlns:wx="" wx:if="{{state.bill_detail.deduction_list[0].status==1}}">
+        <text>{{state.bill_detail.deduction_list[0].name}}抵扣</text>
+        <text>{{state.bill_detail.deduction_list[0].deduction}}</text>
+    </view>
+    <view class="disperse couponDiscount orange" wx:elif="{{state.bill_detail.internal_channel_list[0].selected==1}}">
+        <text>{{state.bill_detail.internal_channel_list[0].name}}</text>
+        <text>{{state.bill_detail.internal_channel_list[0].deduction}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="paymentInfo">
+        <image class="paymentIcon" src="http://static.didialift.com/didialift/hybrid/images/icons/pay_icon_wechat@3x.png"></image>
+        <view class="paymentTypeWrap">
+            <text class="paymentType">微信支付</text>
+        </view>
+    </view>
+    <view class="line"></view>
+    <view class="center amount">
+        <text>实付</text>
+        <text>{{state.bill_basic.should_pay_fee}}</text>
+        <text>元</text>
+    </view>
+    <view bindtap="_dispatch" class="center detail" data-bindtap="checkDetail">
+        <text>全部费用详情</text>
+        <image src="../../common/image/common_icon_right@2x.png"></image>
+    </view>
+</view>
+<view class="ad-block" xmlns:wx="" wx:if="{{state.adBlock}}">
+    <button class="share-btn" openType="share" wx:if="{{state.configType===0}}"></button>
+    <image bindtap="_dispatch" data-bindtap="clickAD" src="{{state.adBlock.imgUrl}}"></image>
+</view>
+<form bindsubmit="_dispatch" data-bindsubmit="formSubmit" reportSubmit="true">
+    <button class="sub_btn" formType="submit">{{state.bill_detail.pay_btn_title}}</button>
+</form>

@@ -1,0 +1,13 @@
+<view class="broken">
+    <image src="../../common/image/htw_broken@2x.png"></image>
+    <text>该车辆被报修</text>
+    <text>{{state.content}}</text>
+    <view bindtap="_dispatch" class="mf-btn {{button1.state.classes}}" data-bindtap="handleClick" data-path="button1">
+        <view class="{{button1.state.icon}}"></view>
+  {{button1.props.text}}
+</view>
+    <view bindtap="_dispatch" class="mf-btn {{button2.state.classes}}" data-bindtap="handleClick" data-path="button2">
+        <view class="{{button2.state.icon}}"></view>
+  {{button2.props.text}}
+</view>
+</view>

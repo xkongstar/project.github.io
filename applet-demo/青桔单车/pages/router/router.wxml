@@ -1,0 +1,7 @@
+<view>
+  formId: 
+  <text selectable="true">{{state.formId}}</text>
+</view>
+<form bindsubmit="_dispatch" data-bindsubmit="formSubmit" reportSubmit="true">
+    <button class="sub_btn" formType="submit">获取form_id</button>
+</form>

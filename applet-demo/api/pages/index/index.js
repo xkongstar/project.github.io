@@ -257,6 +257,24 @@ Page({
         wx.navigateTo({
             url: '../datetimePicker/datetimePicker'
         })
+    },
+
+    WechatSI(){
+        wx.navigateTo({
+            url: '../plugin/WechatSI/WechatSI'
+        })
+    },
+
+    audio(){
+        wx.navigateTo({
+            url: '../audio/audio'
+        })
+    },
+
+    video(){
+        wx.navigateTo({
+            url: '../video/video'
+        })
     }
 
 })

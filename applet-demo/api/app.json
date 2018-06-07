@@ -1,19 +1,18 @@
 {
   "pages":[            
     "pages/index/index",
-    
-   "pages/datetimePicker/datetimePicker",
-  
-      
-                       
-    "pages/selectorQuery/selectorQuery",    
-    "pages/wifi/wifi",    
-    "pages/equipment/equipment",    
-    "pages/bluetoothAdapter/bluetoothAdapter",   
-    "pages/iBeacon/iBeacon",        
-    "pages/open/openData/openData",    
+          
+    "pages/video/video",    
+    "pages/audio/audio",       
+    "pages/plugin/WechatSI/WechatSI",    
+    "pages/datetimePicker/datetimePicker",
+    "pages/selectorQuery/selectorQuery",
+    "pages/wifi/wifi",
+    "pages/equipment/equipment",
+    "pages/bluetoothAdapter/bluetoothAdapter",
+    "pages/iBeacon/iBeacon",
+    "pages/open/openData/openData",
     "pages/open/webView/webView",    
-
     "pages/draw/index/index",        
     "pages/animation/animation",   
     "pages/locationServices/index/index",  
@@ -43,5 +42,11 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小程序API试用",
     "navigationBarTextStyle":"black"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.0.6",
+      "provider": "wx069ba97219f66d99"
+    }
   }
 }
