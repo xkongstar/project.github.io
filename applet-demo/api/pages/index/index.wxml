@@ -111,6 +111,9 @@
     <view>
       <button bindtap="datetimePicker">日期时间选择器</button>
     </view>
+    <view>
+      <button bindtap="qrcode">根据文字生成二维码</button>
+    </view>
   </view>
 
   <!-- 插件 -->

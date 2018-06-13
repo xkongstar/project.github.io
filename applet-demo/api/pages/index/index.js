@@ -275,6 +275,12 @@ Page({
         wx.navigateTo({
             url: '../video/video'
         })
+    },
+
+    qrcode(){
+        wx.navigateTo({
+            url: '../wordtoqrcode/wordtoqrcode'
+        })
     }
 
 })

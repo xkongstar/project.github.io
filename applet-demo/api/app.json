@@ -1,7 +1,8 @@
 {
   "pages":[            
     "pages/index/index",
-          
+    
+    "pages/wordtoqrcode/wordtoqrcode",    
     "pages/video/video",    
     "pages/audio/audio",       
     "pages/plugin/WechatSI/WechatSI",    
