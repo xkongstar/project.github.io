@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>动态旋转边框</title>
+    <style>
+        .box{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ring-inner{
+            height: 220px;
+            width: 220px;
+            position: absolute;
+            background: url(images/ring-inner.png) no-repeat;
+            background-size: 90%;
+            background-position: center;
+            animation: clockwise 3s linear infinite;
+        }
+        .ring-outer{
+            height: 220px;
+            width: 220px;
+            position: absolute;
+            background: url(images/ring-outer.png) no-repeat;
+            background-size: 100%;
+            background-position: center;
+            animation: anti-clockwise 3s linear infinite;
+        }
+        .avatar{
+            height: 160px;
+            width: 160px;
+            background: url(images/92.jpg);
+            background-size: cover;
+            border-radius: 50%
+        }
+        @keyframes clockwise{
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        @keyframes anti-clockwise{
+            0%{
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+<div class='box'>
+    <div class='ring-outer'></div>
+    <div class='ring-inner'></div>
+    <div class='avatar'></div>
+</div>
+<script>
+
+</script>
+
+</body>
+</html>
